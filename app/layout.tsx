@@ -1,8 +1,26 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Chakra_Petch } from "next/font/google";
+import localfont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/navbar";
+import Register from "@/components/onboarding";
+import Footer from "@/components/footer";
+import AboutUs from "@/components/about";
 
 const inter = Inter({ subsets: ["latin"] });
+const chakra = Chakra_Petch({
+  subsets: ["latin"] , 
+  weight: "400",
+  variable: "--font-chakra"
+});
+
+const kleemax = localfont({
+  src : [{
+    path: "../public/fonts/kleemaxdemo.ttf",
+    weight : "400"
+    }],
+    variable: "--font-kleemax"
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +34,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${kleemax.variable} ${chakra.variable}`}>
+        <Navbar/>
+        <Register/>
+        <AboutUs/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }

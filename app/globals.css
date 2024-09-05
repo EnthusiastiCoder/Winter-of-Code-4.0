@@ -31,3 +31,20 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  .border-outline-2 {
+    -webkit-text-stroke: 2px #E2AA06;
+  }
+
+  .border-outline-1 {
+    -webkit-text-stroke: 1px #E2AA06;
+  }
+
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f);
+}
