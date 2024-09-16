@@ -14,8 +14,7 @@ const navigation = [
 
 const Footer = () => {
     return (
-        
-        <div className="flex-col flex py-2 sm:py-4 w-full">
+        <div className="flex-col flex py-2 sm:py-4 w-full bg-black">
             <div className="flex w-full m:top-9 md:top-10">
                 
             </div>

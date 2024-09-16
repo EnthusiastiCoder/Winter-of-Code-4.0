@@ -10,7 +10,7 @@ const navigation = [
 
 const Navbar = () => {
     return (
-        <nav className="sticky flex-col flex py-2 sm:py-4 w-full">
+        <nav className="sticky flex-col flex py-2 sm:py-4 w-full bg-black">
             <div className="flex md:justify-between w-full justify-center">
                 <div className="hidden md:flex flex-1"></div>
                 <div className="flex flex-shrink-0">

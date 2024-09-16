@@ -12,7 +12,9 @@ const config: Config = {
       brand:"#E2AA06",
       blite:"#FBBC0440",
       black:"#000000",
-      grey:"#D9D9D90D",
+      white:"#FFFFFF",
+      timeline:'#C23B30',
+      grey:"#CCCCCC",
     },
     extend: {
       backgroundImage: {
@@ -25,10 +27,16 @@ const config: Config = {
         chakra: ["var(--font-chakra)"],
       },
       dropShadow: {
-        glow: [
-          "0 0px 20px rgba(220,170, 6, 1)",
-
-        ]
+        gold: [
+          "0 0 20px rgba(220,170, 6, 1)",
+        ],
+        green: [
+          "0 0px 20px rgba(0,255,132, 1)",
+        ],
+        red: [
+          "0 0 20px rgba(248,57,63, 1)",
+        ],
+        
       },
       maxWidth: {
         '1/5': '20%',
