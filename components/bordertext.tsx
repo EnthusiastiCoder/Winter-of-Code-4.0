@@ -4,7 +4,7 @@ const ParallelAnimatedTextBorderTrace = () => {
   const text = Array.from("WINTEROFCODE");
   const x = [0, 90, 180, 270, 360,450,0, 85, 195, 280, 365, 450];
   return (
-    <div className="flex items-center mt-[10%] justify-center w-full bg-black sm:p-0">
+    <div className="flex items-center mt-[5%] justify-center w-full bg-black sm:p-0">
       <svg className="w-[80%]" viewBox="0 0 570 170">
             {text.map((letter,index)=>
             <text
@@ -14,7 +14,7 @@ const ParallelAnimatedTextBorderTrace = () => {
               className="text-trace font-kleemax"
               stroke="#609CFF"
               fill="#151D2F"
-              strokeWidth="var(--stroke-width)"
+              strokeWidth="0.5%"
             >
               {letter}
             </text>
@@ -31,7 +31,7 @@ const styles = `
 
   @media (min-width: 640px) {
     :root {
-      --stroke-width: 0.15vw;
+      --stroke-width: 0.1%;
     }
   }
 
@@ -47,15 +47,14 @@ const styles = `
   .text-trace {
     
     font-size: 70px;
-    font-weight: bold;
     stroke-dasharray: 150%,5%;
     stroke-linejoin: round;
-    animation: trace 5s linear 1;
+    animation: trace 15s linear 1;
   }
 
   /* Add a glow effect */
   .text-trace {
-    filter: drop-shadow(0 0 1px rgba(96, 156, 255, 1));
+    filter: drop-shadow(0 0 0.5vw rgba(96, 156, 255, 1));
   }
 `;
 
