@@ -12,6 +12,15 @@ import Script from "next/script";
 import { useEffect } from "react";
 import FAQPage from "@/components/faq";
 import Timeline from "@/components/timeline";
+import Organisations from "@/components/organisations";
+import Sponsors from "@/components/sponsors";
+import Partners from "@/components/partners";
+import Carousel from "@/components/carousel";
+
+import asset1 from '../public/platinum.svg'
+import asset2 from '../public/gold.svg'
+import asset3 from '../public/silver.svg'
+import asset4 from '../public/bronze.svg'
 
 const inter = Inter({ subsets: ["latin"] });
 const chakra = Chakra_Petch({
@@ -72,10 +81,12 @@ export default function RootLayout({
 
     // Adjust the font size when the window is resized
     window.addEventListener('resize', setFontSizeForTextScaleElements);
+    window.addEventListener('click', setFontSizeForTextScaleElements);
 
     // Clean up event listener on unmount
     return () => {
         window.removeEventListener('resize', setFontSizeForTextScaleElements);
+        window.removeEventListener('click', setFontSizeForTextScaleElements);
     };
 }, []);
   return (
@@ -85,7 +96,10 @@ export default function RootLayout({
         <Register/>
         <AboutUs/>
         <Timeline/>
+        <Organisations/>
+        <Sponsors/>
         <FAQPage/>
+        <Partners/>
         {children}
         <Footer/>
       </body>

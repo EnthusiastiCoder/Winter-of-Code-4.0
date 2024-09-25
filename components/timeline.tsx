@@ -58,7 +58,7 @@ const TimelineCard = ({ event, index }: TimelineCardProps) => {
     return (
         <div className={`z-20 w-full sm:flex ${index%2===0 ? "flex-row-reverse" : ""}`}>
             <div className={`relative w-fit max-w-[70%] sm:max-w-[40%] mx-auto sm:mx-0`}>
-                <Image src={asset1} alt="woc"/>
+                <Image className="backdrop-blur" src={asset1} alt="timeline card"/>
                 <div className='absolute top-0 left-0 p-[2%] font-kleemax font-xl w-[40%] text-center text-white text-scale-30 text-nowrap overflow-hidden'>
                 {event.date.toUpperCase()}
                 </div>
@@ -71,9 +71,9 @@ const TimelineCard = ({ event, index }: TimelineCardProps) => {
                 <div className='absolute top-[38%] left-0 p-[2%] w-[100%] h-[45%] text-left text-grey text-scale-30 overflow-hidden'>
                 {event.desc}
                 {TBA && 
-                <div>
-                    <Image className="absolute top-[42%] left-[35%] w-[4%] drop-shadow-red" src={asset5} alt="lock" />
-                    <p className="absolute top-[35%] left-[40%] text-timeline drop-shadow-red text-scale-50 font-semibold">to be announced</p>
+                <div className="absolute flex justify-center top-[30%] w-full">
+                    <Image className="w-[6%] drop-shadow-red" src={asset5} alt="lock" />
+                    <p className="pl-[2%] pt-[2%] text-timeline font-kleemax drop-shadow-redmini text-scale-50 font-semibold align-baseline">TO BE ANNOUNCED</p>
                 </div>
                 }
                 </div>
@@ -87,7 +87,7 @@ const TimelineCard = ({ event, index }: TimelineCardProps) => {
 const Timeline = () => {
     return (
         <section className='w-full h-full mx-auto mt-[10%]'>
-            <div className='text-center text-timeline font-kleemax text-scale-60 drop-shadow-red'>
+            <div className='text-center text-timeline font-kleemax text-scale-40 drop-shadow-red'>
                 TIMELINE
             </div>
             <div className='w-full p-[10%] sm:p-[5%] relative'>

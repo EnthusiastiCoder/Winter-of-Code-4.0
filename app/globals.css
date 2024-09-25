@@ -34,15 +34,24 @@ body {
 
 @layer base {
   .border-outline-2 {
-    -webkit-text-stroke: 2px #E2AA06;
+    -webkit-text-stroke: 2px #609CFF;
   }
 
   .border-outline-1 {
-    -webkit-text-stroke: 1px #E2AA06;
+    -webkit-text-stroke: 1px #609CFF;
   }
   
 }
 
+.faq{
+  aspect-ratio:1/1;
+}
+.faq-b-r{
+  border-top-width:3px;
+}
+.faq-t-l{
+  border-bottom-width:3px;
+}
 
 hr {
   border: 0;

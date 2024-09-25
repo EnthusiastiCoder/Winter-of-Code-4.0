@@ -11,20 +11,19 @@ const faqData = [
       answer:
         'Winter of Code (WoC) is an exciting month-long open-source program. It’s similar to Google Summer of Code (GSoC), but with a few fun twists of our own!',
     },
-  {
-    question: 'Is WOC online?',
-    answer: 'WOC will be conducted in complete online mode, so you can participate from anywhere without any worry.',
-  },
     {
       question: 'Who can participate?',
       answer:
         'Absolutely anyone! Whether you’re a student (grad, undergrad, or even in high school), a professional, or anyone else we might’ve missed, WoC is open to all.',
     },
-    {
-      question: 'What are Organisations?',
-      answer:
-        'Organisations are open-source communities that build incredible software for everyone to use. They’ll be accepting your project proposals and mentoring you throughout the program.',
-    },
+  {
+    question: 'Is WoC online?',
+    answer: 'WOC will be conducted in complete online mode, so you can participate from anywhere without any worry.',
+  },
+  {
+    question: 'Is WoC for beginners?',
+    answer: 'Yes, WoC is for EVERYONE – beginners, pros, and everyone in between!',
+  },
     {
       question: 'What is a proposal? How do I send one?',
       answer:
@@ -41,9 +40,11 @@ const faqData = [
         'Everyone who passes the mentor evaluation will get prizes from our sponsors! Plus, some organisations might even have their own rewards for top contributors.',
     },
     {
-      question: 'Is WoC for beginners?',
-      answer: 'Yes, WoC is for EVERYONE – beginners, pros, and everyone in between!',
+      question: 'What are Organisations?',
+      answer:
+        'Organisations are open-source communities that build incredible software for everyone to use. They’ll be accepting your project proposals and mentoring you throughout the program.',
     },
+    
   ];
 
 interface FAQ{
@@ -57,18 +58,24 @@ interface FAQ{
 
 const FAQCard: React.FC<FAQ> = ({ question, answer, isOpen, toggleOpen }) => {
     return (
-            <div className='relative w-fit max-w-[80%] sm:max-w-[40%] mx-auto my-1 sm:my-5'>
-                <Image className="m-auto absolute top-0" src={asset3} alt="faqcard2" style={{visibility: isOpen? 'hidden' : 'visible'}}/>
-                <Image className="m-auto absolute-top-0" src={asset1} alt="faqcard" style={{visibility: !isOpen? 'hidden' : 'visible'}}/>
-                <div className='absolute top-[7%] right-[2%] w-[7%] h-[28%]'>
-                    <Image  src={asset2} alt="faqbutton" id="faqbutton" fill onClick={toggleOpen} style={{transform: isOpen ? 'rotateX(180deg)' : 'rotateX(0deg)',transition: 'transform 0.3s ease' }} />
+            <div className='w-[80%] sm:w-[40%] mx-auto sm:mx-[1%] my-[1%] h-fit' onClick={toggleOpen}>
+              <div className={`relative w-full flex py-[2%] px-[3%] justify-between border-[3px] border-faq ${isOpen? "border-b-0":""}`}>
+                <div className='faq absolute w-[3.7%] h-auto top-0 left-0' >
+                  <div className='faq-t-l w-full h-full absolute -rotate-45 border-b-2 border-faq bg-black top-[-53%] left-[-54%]'></div>
                 </div>
-                <div className='absolute top-0 left-[3%] p-[2%] w-[85%] h-[40%] text-left text-[#00FF84] text-scale-40 overflow-hidden' >
+                <div className='w-[85%] text-left text-faq text-scale-40' >
                 {question}
                 </div>
-                <div className='absolute top-[35%] left-[3%] px-[2%] w-[85%] h-[50%] text-left text-[#CBCBCB] text-scale-20 overflow-hidden' style={{visibility: ! isOpen? 'hidden' : 'visible'}}>
+                <Image className={`w-[7%] h-[15%] transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} src={asset2} alt="faqbutton" id="faqbutton" />
+              </div>
+              { isOpen &&
+                <div className='relative px-[2%] w-full pr-[15%] pb-[2%] text-left text-[#CBCBCB] text-scale-30 border-[3px] border-t-0 border-faq'>
                 {answer}
+                <div className='faq absolute w-[18%] h-auto bottom-0 right-0' >
+                  <div className='faq-b-r w-full h-full absolute -rotate-45 border-faq bg-black bottom-[-50.5%] right-[-50.5%]'></div>
                 </div>
+                </div>
+              }
             </div>
     );
 };
@@ -93,7 +100,7 @@ const FAQPage = () => {
                 </div>
                 <div className='w-full mx-auto my-[3%] flex flex-wrap justify-center'>
                 {faqData.map((faq, index) => (
-                    <FAQCard key={index} index={index} question={faq.question} answer={faq.answer} isOpen={!openItems[index]} toggleOpen={() => toggleItem(index)} />
+                    <FAQCard key={index} index={index} question={faq.question} answer={faq.answer} isOpen={openItems[index]} toggleOpen={() => toggleItem(index)} />
                 ))}
                 </div>
                 <hr className="flex max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] mt-[10%]"/>

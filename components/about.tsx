@@ -23,7 +23,7 @@ const AboutUs = () => {
                 {description}
             </div>
             <div className='z-10 w-full -bottom-[25%] mx-auto absolute'>
-                <Image className="max-w-1/2 m-auto" src={asset2} alt="woc" />
+                <Image className="max-w-1/2 m-auto backdrop-blur" src={asset2} alt="woc" />
             </div>
         </div>
         <hr className="flex max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] mt-[20%]"/>

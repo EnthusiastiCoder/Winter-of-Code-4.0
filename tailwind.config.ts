@@ -9,7 +9,10 @@ const config: Config = {
   ],
   theme: {
     colors:{
-      brand:"#E2AA06",
+      brand:"#609CFF",
+      orgs:"#E2AA06",
+      faq:"#00FF84",
+      partner:"#F84335",
       blite:"#FBBC0440",
       black:"#000000",
       white:"#FFFFFF",
@@ -36,7 +39,12 @@ const config: Config = {
         red: [
           "0 0 20px rgba(248,57,63, 1)",
         ],
-        
+        redmini: [
+          "0 0 10px rgba(248,57,63, 1)",
+        ],
+        blue: [
+          "0 0 20px rgba(96,156,255, 1)",
+        ]        
       },
       maxWidth: {
         '1/5': '20%',
