@@ -77,11 +77,19 @@ export default function Structure({
     // Adjust the font size when the window is resized
     window.addEventListener('resize', setFontSizeForTextScaleElements);
     window.addEventListener('click', setFontSizeForTextScaleElements);
+    window.addEventListener('load', setFontSizeForTextScaleElements);
+    
+    const interval = setInterval(() => {
+      setFontSizeForTextScaleElements();
+      console.log('interval')
+    }, 1000);
 
     // Clean up event listener on unmount
     return () => {
         window.removeEventListener('resize', setFontSizeForTextScaleElements);
         window.removeEventListener('click', setFontSizeForTextScaleElements);
+        window.addEventListener('load', setFontSizeForTextScaleElements);
+        clearInterval(interval)
     };
 }, []);
   return (
