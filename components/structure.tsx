@@ -79,17 +79,17 @@ export default function Structure({
     window.addEventListener('click', setFontSizeForTextScaleElements);
     window.addEventListener('load', setFontSizeForTextScaleElements);
     
-    const interval = setInterval(() => {
+    const timeout = setTimeout(() => {
       setFontSizeForTextScaleElements();
       console.log('interval')
-    }, 1000);
+    }, 500);
 
     // Clean up event listener on unmount
     return () => {
         window.removeEventListener('resize', setFontSizeForTextScaleElements);
         window.removeEventListener('click', setFontSizeForTextScaleElements);
         window.addEventListener('load', setFontSizeForTextScaleElements);
-        clearInterval(interval)
+        clearTimeout(timeout);
     };
 }, []);
   return (
