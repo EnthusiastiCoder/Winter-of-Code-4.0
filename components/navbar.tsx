@@ -19,7 +19,7 @@ const Navbar = () => {
                     </Link>
                 <div className="flex flex-1 justify-end mr-[2%]">
                     {navigation.map((item) => (
-                    <Link href={item.href} className="font-chakra font-bold text-brand text-scale-30 px-[1%] hover:drop-shadow-2xl" key={item.name}>
+                    <Link href={item.href} className="font-chakra font-bold text-brand text-scale-30 max-w-[20%] px-[1%] hover:drop-shadow-blue" key={item.name}>
                         {item.name.toUpperCase()}
                     </Link>
                     ))}

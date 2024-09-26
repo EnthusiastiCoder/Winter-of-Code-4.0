@@ -25,15 +25,6 @@ const ParallelAnimatedTextBorderTrace = () => {
 };
 
 const styles = `
-:root {
-    --stroke-width: 0.6%;
-  }
-
-  @media (min-width: 640px) {
-    :root {
-      --stroke-width: 0.1%;
-    }
-  }
 
   @keyframes trace {
     0% {
@@ -49,7 +40,7 @@ const styles = `
     font-size: 70px;
     stroke-dasharray: 150%,5%;
     stroke-linejoin: round;
-    animation: trace 15s linear 1;
+    animation: trace 10s linear 1;
   }
 
   /* Add a glow effect */

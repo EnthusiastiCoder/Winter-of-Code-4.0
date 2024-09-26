@@ -59,9 +59,9 @@ interface FAQ{
 const FAQCard: React.FC<FAQ> = ({ question, answer, isOpen, toggleOpen }) => {
     return (
             <div className='w-[80%] sm:w-[40%] mx-auto sm:mx-[1%] my-[1%] h-fit' onClick={toggleOpen}>
-              <div className={`relative w-full flex py-[2%] px-[3%] justify-between border-[3px] border-faq ${isOpen? "border-b-0":""}`}>
-                <div className='faq absolute w-[3.7%] h-auto top-0 left-0' >
-                  <div className='faq-t-l w-full h-full absolute -rotate-45 border-b-2 border-faq bg-black top-[-53%] left-[-54%]'></div>
+              <div className={`relative w-full flex py-[2%] px-[3%] justify-between border-[3px] border-faq ${isOpen? "border-b-0":""} bg-gradient-to-b from-[#00FF8415] to-[#00FF8412]`}>
+                <div className='aspect-ratio-1 absolute w-[3.7%] h-auto top-0 left-0' >
+                  <div className='faq-t-l w-full h-full absolute -rotate-45 border-b-2 border-faq bg-black top-[-59%] left-[-59%] sm:top-[-56%] sm:left-[-56%]'></div>
                 </div>
                 <div className='w-[85%] text-left text-faq text-scale-40' >
                 {question}
@@ -69,10 +69,10 @@ const FAQCard: React.FC<FAQ> = ({ question, answer, isOpen, toggleOpen }) => {
                 <Image className={`w-[7%] h-[15%] transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} src={asset2} alt="faqbutton" id="faqbutton" />
               </div>
               { isOpen &&
-                <div className='relative px-[2%] w-full pr-[15%] pb-[2%] text-left text-[#CBCBCB] text-scale-30 border-[3px] border-t-0 border-faq'>
+                <div className='relative px-[2%] w-full pr-[15%] pb-[2%] text-left text-[#CBCBCB] text-scale-30 border-[3px] border-t-0 border-faq bg-gradient-to-b from-[#00FF8412] to-[#19A26005] '>
                 {answer}
-                <div className='faq absolute w-[18%] h-auto bottom-0 right-0' >
-                  <div className='faq-b-r w-full h-full absolute -rotate-45 border-faq bg-black bottom-[-50.5%] right-[-50.5%]'></div>
+                <div className='aspect-ratio-1 absolute w-[20%] h-auto bottom-0 right-0' >
+                  <div className='faq-b-r w-full h-full absolute -rotate-45 border-faq bg-black bottom-[-51.5%] right-[-51.5%] sm:bottom-[-50.55%] sm:left-[50.5%]'></div>
                 </div>
                 </div>
               }
@@ -91,8 +91,8 @@ const FAQPage = () => {
   };
 
     return (
-            <section className='w-full mx-auto mt-[10%]'>
-                <div className='text-center text-[#00FF84] font-kleemax text-scale-40 drop-shadow-green relative'>
+            <section className='w-full mx-auto mt-[10%] font-chakra'>
+                <div className='text-center text-faq font-kleemax text-scale-40 drop-shadow-green relative'>
                     FAQ
                     <div className='w-[20%] absolute left-[40%] -top-[25%]'>
                         <Image className="mx-auto w-full" src={asset4} alt="faquestion" />
@@ -103,7 +103,7 @@ const FAQPage = () => {
                     <FAQCard key={index} index={index} question={faq.question} answer={faq.answer} isOpen={openItems[index]} toggleOpen={() => toggleItem(index)} />
                 ))}
                 </div>
-                <hr className="flex max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] mt-[10%]"/>
+                <hr className="flex w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] mt-[10%]"/>
             </section>
     );
 };

@@ -43,8 +43,12 @@ body {
   
 }
 
-.faq{
+.aspect-ratio-1{
   aspect-ratio:1/1;
+}
+.top-right-arrow {
+  border-left: 1vw solid transparent;
+  border-top: 1vw solid #609CFF;
 }
 .faq-b-r{
   border-top-width:3px;

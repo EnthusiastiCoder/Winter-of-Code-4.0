@@ -31,19 +31,19 @@ const config: Config = {
       },
       dropShadow: {
         gold: [
-          "0 0 20px rgba(220,170, 6, 1)",
+          "0 0 1vw rgba(220,170, 6, 1)",
         ],
         green: [
-          "0 0px 20px rgba(0,255,132, 1)",
+          "0 0px 1vw rgba(0,255,132, 1)",
         ],
         red: [
-          "0 0 20px rgba(248,57,63, 1)",
+          "0 0 1vw rgba(248,57,63, 1)",
         ],
         redmini: [
-          "0 0 10px rgba(248,57,63, 1)",
+          "0 0 1vw rgba(248,57,63, 1)",
         ],
         blue: [
-          "0 0 20px rgba(96,156,255, 1)",
+          "0 0 1vw rgba(96,156,255, 1)",
         ]        
       },
       maxWidth: {
