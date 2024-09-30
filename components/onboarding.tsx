@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image'
 import asset1 from '../public/register.svg'
+import devfolio from '../public/devfolio.png'
 import BorderText from '@/components/bordertext';
 const Register = () => {
     return (
@@ -22,6 +23,7 @@ const Register = () => {
             data-button-theme="light"
             style={{height: '44px', width: '312px'}}
             ></div>
+            <Image src={devfolio} alt="DEVFOLIO LOGO" className="w-[50%]"/>
             <hr className="flex w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] mt-[10%]"/>
         </section>
         
