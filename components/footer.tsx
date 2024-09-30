@@ -5,32 +5,27 @@ import instagram from '../public/instagram.svg'
 import twitter from '../public/twitter.svg'
 import facebook from '../public/facebook.svg'
 import linkedin from '../public/linkedin.svg'
-const navigation = [
-    { name: "Team", href: "#", current: true },
-    { name: "Organisation", href: "#", current: false },
-    { name: "Time-Line", href: "#", current: false },
-    { name: "FAQ", href: "#", current: false },
-  ];
+import { Input } from 'postcss';
 
 const Footer = () => {
     return (
-        <div className="flex-col flex py-2 sm:py-4 w-full bg-black">
-            <div className="flex w-full m:top-9 md:top-10">
-                
-            </div>
-            <Image src={footer} alt="footer" style={{objectFit: 'cover',}}/>
-            <div className="absolute flex-col flex flex-shrink-0 p-4 lg:p-10">
-                    <Link href="/" className=" text-sm sm:text-2xl md:text-4xl lg:text-9xl text-black font-kleemax border-outline-1 sm:border-outline-2">
-                    WOC
-                    </Link>
-                    <div className="relative flex p-4">
-                        <Image className='p-4' src={instagram} width={75} quality={100}  alt="footer" />
-                        <Image className="p-4" src={twitter} width={75} quality={100}  alt="footer" />
-                        <Image className="p-4" src={facebook} width={75} quality={100}  alt="footer" />
-                        <Image className="p-4" src={linkedin}  width={75} quality={100}  alt="footer" />
+        <div className="flex py-[1%] px-[5%] w-full justify-between flex-[1-3-0]" style={{backgroundImage: `url(${footer.src})`,backgroundSize:"contain"}}>
+            <div className="flex-col flex w-full">
+                    <div className="w-[40%] text-scale-120 text-black font-kleemax border-outline">
+                    WOC                    
                     </div>
-                    
-                    
+                    <div className="h-[30%] flex w-[40%]">
+                        <Image className="w-[25%]" src={instagram} alt="instagram" />
+                        <Image className="w-[25%]" src={twitter}  alt="twitter" />
+                        <Image className="w-[25%]" src={facebook} alt="facebook" />
+                        <Image className="w-[25%]" src={linkedin} alt="linkedin" />
+                    </div>
+            </div>
+            <div className="flex-col flex w-fit pt-[5%] p-[1%]">
+                <div className="text-scale-60 text-white font-kleemax text-wrap ">
+                    EMAIL US FOR MORE DETAILS
+                </div>
+                <input type="text" className="w-full font-kleemax text-scale-30 bg-black text-orgs border-0 uppercase terminal-input"></input>
             </div>
         </div>
 

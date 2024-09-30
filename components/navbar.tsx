@@ -11,10 +11,10 @@ const navigation = [
 
 const Navbar = () => {
     return (
-        <nav className="sticky flex-col flex w-full bg-black">
-            <div className="flex w-full justify-center py-[1%]">
+        <nav className="z-40 sticky flex-col flex w-full top-0">
+            <div className="flex w-full justify-center py-[1%] bg-black">
                 <div className="flex flex-1"></div>
-                    <Link href="/" className="text-scale-40 w-[14%] absolute top-[5%] left-[43%] text-center text-brand font-kleemax border-outline-1 sm:border-outline-2">
+                    <Link href="/" className="text-scale-40 w-[14%] absolute top-[5%] left-[43%] text-center text-brand font-kleemax ">
                     WOC
                     </Link>
                 <div className="flex flex-1 justify-end mr-[2%]">
@@ -25,7 +25,7 @@ const Navbar = () => {
                     ))}
                 </div>
             </div>
-            <div className="flex w-full">
+            <div className="flex w-full bg-black ">
                 <Image src={navline} alt="navline"/>
             </div>
         </nav>

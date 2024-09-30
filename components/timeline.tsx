@@ -86,7 +86,7 @@ const TimelineCard = ({ event, index }: TimelineCardProps) => {
 
 const Timeline = () => {
     return (
-        <section className='w-full h-full mx-auto mt-[10%]'>
+        <section className='w-full h-full mx-auto pt-[10%] bg-black'>
             <div className='text-center text-timeline font-kleemax text-scale-40 drop-shadow-red'>
                 TIMELINE
             </div>
@@ -100,7 +100,7 @@ const Timeline = () => {
             ))}
             <Image className="z-20 mx-auto w-[5%] my-[10%]" src={asset4} alt="start" />
             </div>
-            <hr className="flex max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50]"/>
+            <hr className="flex max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to to-black"/>
         </section>
 );
 

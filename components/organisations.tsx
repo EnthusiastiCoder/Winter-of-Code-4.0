@@ -49,7 +49,7 @@ const OrgCard = ({title,desc} : Org) => {
 const Organisations = () => {
     var TBA = true;
     return (
-        <section className='w-full h-full mx-auto mt-[10%]'>
+        <section className='w-full h-full mx-auto pt-[10%] bg-black'>
             <div className='text-center text-orgs font-kleemax text-scale-40 drop-shadow-gold'>
             ORGANISATIONS
             </div>
@@ -62,7 +62,7 @@ const Organisations = () => {
             )}
             </div>            
             }
-            <hr className="flex mt-[10%] w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50]"/>
+            <hr className="flex mt-[10%] w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black"/>
         </section>
 );
 

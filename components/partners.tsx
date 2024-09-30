@@ -17,7 +17,7 @@ const Partners = () => {
             <Image className="mx-auto w-[60%] sm:w-[25%] my-[5%]" src={asset1} alt="partner" />
             </div>
             }
-            <hr className="flex mt-[10%] w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50]"/>
+            <hr className="invisible flex mt-[10%] w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50]"/>
         </section>
 );
 

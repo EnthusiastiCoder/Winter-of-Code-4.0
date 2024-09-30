@@ -43,6 +43,13 @@ export default function Structure({
   children: React.ReactNode;
 }>) {
   useEffect(() => {
+    
+    const script = document.createElement('script');
+      script.src = 'https://apply.devfolio.co/v2/sdk.js';
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+      
     // Function to set the font size based on the parent's width and the number in the class name
     const setFontSizeForTextScaleElements = (): void => {
         // Select all elements whose class contains "text-scale-number"
@@ -70,7 +77,6 @@ export default function Structure({
             }
         });
     };
-
     // Set the initial font size for all matching elements
     setFontSizeForTextScaleElements();
 
@@ -86,6 +92,7 @@ export default function Structure({
 
     // Clean up event listener on unmount
     return () => {
+        document.body.removeChild(script);
         window.removeEventListener('resize', setFontSizeForTextScaleElements);
         window.removeEventListener('click', setFontSizeForTextScaleElements);
         window.addEventListener('load', setFontSizeForTextScaleElements);
@@ -105,6 +112,7 @@ export default function Structure({
         <Partners/>
         {children}
         <Footer/>
+        <Script defer async src="https://apply.devfolio.co/v2/sdk.js"></Script>
       </body>
   );
 }

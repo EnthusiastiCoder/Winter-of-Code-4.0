@@ -4,6 +4,7 @@ import asset2 from '../public/gold.svg'
 import asset3 from '../public/silver.svg'
 import asset4 from '../public/bronze.svg'
 
+
 const Sponsors = () => {
     var TBA = true;
     return (
@@ -21,7 +22,7 @@ const Sponsors = () => {
             <Image className="mx-auto w-full my-[5%] backdrop-blur" src={asset4} alt="bronze sponsor" />
             </div>            
             }
-            <hr className="flex mt-[10%] max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50]"/>
+            <hr className="flex mt-[10%] max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black"/>
         </section>
 );
 

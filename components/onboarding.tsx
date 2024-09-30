@@ -17,6 +17,11 @@ const Register = () => {
                 </div>
                 <hr className="max-w-full h-[0.25vw] flex-grow bg-gradient-to-r from-brand"/>
             </div>
+            <div className="apply-button" 
+            data-hackathon-slug="winterofcode" 
+            data-button-theme="light"
+            style={{height: '44px', width: '312px'}}
+            ></div>
             <hr className="flex w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] mt-[10%]"/>
         </section>
         
