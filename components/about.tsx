@@ -7,7 +7,7 @@ const description = "Winter of Code is a 30-day open-source journey brought to y
 const AboutUs = () => {
     return (
         <section className='w-full p-4 pt-[10%]'>
-        <div className="bg-[#868686] bg-opacity-10 m-auto max-w-[90%] pb-[10%] mb-[10%] relative">
+        <div className="bg-[#868686] bg-opacity-10 m-auto max-w-[90%] pb-[10%] relative">
             <div className="w-full flex">
                 <div className='text-[#00FF84] bg-black w-fit rounded-br-xl border-[#868686] border-opacity-10 pr-4 text-scale-40 font-kleemax text-nowrap'>
                     ABOUT US
@@ -19,12 +19,11 @@ const AboutUs = () => {
                     <Image src={asset1} alt="woc"/>
                 </div>
             </div>
-            <div className="w-full relative flex p-[5%] text-scale-20 text-grey">
+            <div className="w-full flex p-[5%] text-scale-20 text-grey">
                 {description}
+                <Image className="absolute w-[50%] -bottom-[22%] left-[25%] backdrop-blur" src={asset2} alt="woc" />
             </div>
-            <div className='z-10 w-full -bottom-[25%] mx-auto absolute'>
-                <Image className="max-w-1/2 m-auto backdrop-blur" src={asset2} alt="woc" />
-            </div>
+                
         </div>
         <hr className="flex max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] mt-[20%]"/>
         </section>

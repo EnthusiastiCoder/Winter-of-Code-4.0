@@ -92,7 +92,7 @@ export default function Structure({
 
     // Clean up event listener on unmount
     return () => {
-        document.body.removeChild(script);
+      document.body.removeChild(script);
         window.removeEventListener('resize', setFontSizeForTextScaleElements);
         window.removeEventListener('click', setFontSizeForTextScaleElements);
         window.addEventListener('load', setFontSizeForTextScaleElements);

@@ -57,7 +57,7 @@ const TimelineCard = ({ event, index }: TimelineCardProps) => {
     var TBA = true;
     return (
         <div className={`z-20 w-full sm:flex ${index%2===0 ? "flex-row-reverse" : ""}`}>
-            <div className={`relative w-fit max-w-[70%] sm:max-w-[40%] mx-auto sm:mx-0`}>
+            <div className={`relative w-fit max-w-[80%] sm:max-w-[40%] mx-auto sm:mx-0`}>
                 <Image className="backdrop-blur" src={asset1} alt="timeline card"/>
                 <div className='absolute top-0 left-0 p-[2%] font-kleemax font-xl w-[40%] text-center text-white text-scale-30 text-nowrap overflow-hidden'>
                 {event.date.toUpperCase()}
@@ -93,12 +93,12 @@ const Timeline = () => {
             <div className='w-full p-[10%] sm:p-[5%] relative'>
             <Image className="z-20 mx-auto w-[30%] mb-[10%] " src={start} alt="start" />
             <div className='hidden sm:block z-10 h-[76.9%] w-[0.4%] mx-auto bg-white absolute top-[9.4%] left-[49.8%]'></div> 
-            <div className='sm:hidden z-10 h-[7.75%] w-[0.4%] mx-auto bg-gradient-to-b from-white to-timeline absolute top-[9.0%] left-[49.8%]'></div>
-            <div className='sm:hidden z-10 h-[4.5%] w-[0.4%] mx-auto bg-gradient-to-t from-white to-timeline absolute bottom-[11.8%] left-[49.8%]'></div>
+            <div className='sm:hidden z-10 h-[7.3%] w-[0.4%] mx-auto bg-gradient-to-b from-white to-timeline absolute top-[8.2%] left-[49.8%]'></div>
+            <div className='sm:hidden z-10 h-[4.1%] w-[0.4%] mx-auto bg-gradient-to-t from-white to-timeline absolute bottom-[10.7%] left-[49.8%]'></div>
             {timelineData.map((event, index) => (
                 <TimelineCard key={index} event={event} index={index} />
             ))}
-            <Image className="z-20 mx-auto w-[5%] my-[10%]" src={asset4} alt="start" />
+            <Image className="z-20 mx-auto w-[5%] my-[10%]" src={asset4} alt="end" />
             </div>
             <hr className="flex max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to to-black"/>
         </section>
