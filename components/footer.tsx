@@ -7,14 +7,19 @@ import facebook from '../public/facebook.svg'
 import linkedin from '../public/linkedin.svg'
 import mailbox from '../public/mailbox.svg'
 import submit from '../public/submit.svg'
-import { useState } from 'react';
+
+const resources = [
+    {title:"Organisation Brochure", link:"https://drive.google.com/file/d/1n3CBIyKuriTmm3xk4Z4aJkUefQc4Rr5y/view?usp=sharing"},
+    {title:"Sponsorship Brochure", link:"https://drive.google.com/file/d/1lzozKgXBw1Czn2MCxXGHrig61oM6Hlc_/view?usp=sharing"},
+
+
+]
 
 const Footer = () => {
     const handleClick = () => {
-        var url = "https://mail.google.com/mail/?view=cm&fs=1&to=dsc.iiitkalyani@gmail.com&SU=";
+        var url = "https://mail.google.com/mail/?view=cm&fs=1&to=dsc.iiitkalyani@gmail.com&su=";
         var terminal = document.getElementById("terminal-input") as HTMLInputElement;
-        url=url+terminal.value;
-        window.open(url, '_blank');
+        window.open(url+terminal.value.toUpperCase(), '_blank');
     }
     return (
         <div className="flex pb-[1%] px-[5%] w-full justify-between" style={{backgroundImage: `url(${footer.src})`,backgroundSize:"cover"}}>
@@ -29,8 +34,18 @@ const Footer = () => {
                         <Image className="w-[22%]" src={linkedin} alt="linkedin" />
                     </div>
             </div>
-            <div className="flex-col flex w-[50%] m-[1%] justify-end text-center">
-                <div className="text-scale-50 text-white font-chakra text-wrap w-[90%] m-[1%]">
+            <div className="flex-col flex w-[50%] m-[1%] justify-end items-center text-center">
+                <div className="text-scale-40 text-white font-chakra w-[90%] m-[1%]">
+                    RESOURCES
+                </div>
+                {resources.map((resource, index) => {
+                    return (
+                        <Link href={resource.link} target="_blank" rel="noopener noreferrer" key={index} className="text-scale-30 text-white font-chakra w-[90%] m-[1%]">
+                            {resource.title}
+                        </Link>
+                    );
+                })}
+                <div className="text-scale-40 text-white font-chakra text-wrap w-[90%] m-[1%]">
                     © GDG IIIT KALYANI 2024
                 </div>
             </div>

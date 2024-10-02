@@ -4,8 +4,9 @@ const ParallelAnimatedTextBorderTrace = () => {
   const text = Array.from("WINTEROFCODE");
   const x = [0, 90, 180, 270, 360,450,0, 85, 195, 280, 365, 450];
   return (
-    <div className="flex items-center mt-[5%] justify-center w-full sm:p-0">
-      <svg className="w-[80%]" viewBox="0 0 570 170">
+    <div className="flex items-center mt-[5%] justify-center w-full sm:p-0 relative">
+      {false && <div className="absolute w-full h-fit top-[-19%] font-kleemax text-scale-260 text-center text-white">WOC</div>}
+      <svg className="z-20 w-[80%]" viewBox="0 0 570 170">
             {text.map((letter,index)=>
             <text
               key={index}
