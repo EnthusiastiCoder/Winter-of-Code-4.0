@@ -14,7 +14,7 @@ const Sponsors = () => {
             <div className='text-center text-brand font-kleemax text-scale-40 drop-shadow-blue'>
                 SPONSORS
             </div>
-            <div className="flex w-full">
+            {/*<div className="flex w-full">
             <div className="apply-button" 
             data-hackathon-slug="winterofcode" 
             data-button-theme="light"
@@ -23,7 +23,7 @@ const Sponsors = () => {
             <Image src={devfolio} alt="DEVFOLIO LOGO" className="w-[20%]"/>
             <Image src={polygon} alt="POLYGON LOGO" className="w-[20%]"/>
             <Image src={ethindia} alt="ETHINDIA LOGO" className="w-[20%]"/>
-            </div>
+            </div>*/}
             {TBA ?
             <div className="pt-[5%] flex w-full justify-center text-brand drop-shadow-blue font-kleemax text-scale-30 font-semibold">TO BE ANNOUNCED
             </div>
