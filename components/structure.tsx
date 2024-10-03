@@ -88,7 +88,7 @@ export default function Structure({
     const timeout = setTimeout(() => {
       setFontSizeForTextScaleElements();
       console.log('interval')
-    }, 500);
+    }, 400);
 
     // Clean up event listener on unmount
     return () => {

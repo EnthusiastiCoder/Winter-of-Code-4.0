@@ -1,8 +1,10 @@
-import Link from 'next/link';
+import Link from 'next/link'
 import Image from 'next/image'
 import asset1 from '../public/register.svg'
-import BorderText from '@/components/bordertext';
+import BorderText from '@/components/bordertext'
+import JumbleText from '@/components/jumble'
 const Register = () => {
+    
     return (
         <section className="bg-black w-full">
             <BorderText/>
@@ -11,8 +13,8 @@ const Register = () => {
                 <hr className="max-w-full h-[0.25vw] flex-grow bg-gradient-to-l from-brand"/>
                 <div className="relative flex justify-center text-scale-30 bg-black drop-shadow-blue px-[1.5%] border-[0.25vw] text-brand">
                     <div className='absolute top-right-arrow right-[0.375vw] top-[0.3vw] sm:top-[0.45vw]'></div>
-                    <Link href="/" className="text-nowrap pt-[2.25%] font-kleemax ">
-                            REGISTER HERE
+                    <Link href="/" className="text-nowrap pt-[1.5%] font-kleemax " data-value="REGISTER HERE">
+                            <JumbleText text="REGISTER HERE" id="registerhere"/>
                     </Link>
                 </div>
                 <hr className="max-w-full h-[0.25vw] flex-grow bg-gradient-to-r from-brand"/>

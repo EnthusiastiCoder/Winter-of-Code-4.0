@@ -41,7 +41,7 @@ const styles = `
     font-size: 70px;
     stroke-dasharray: 150%,5%;
     stroke-linejoin: round;
-    animation: trace 10s linear 1;
+    animation: trace 8s linear 1;
   }
 
   /* Add a glow effect */
