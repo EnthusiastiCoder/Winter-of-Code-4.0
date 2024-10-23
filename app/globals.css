@@ -41,14 +41,7 @@ hr {
   text-shadow: 0 0 0 #E2AA06;
 }
 
-/*
-.terminal-inputlol {
-  -webkit-tap-highlight-color :black;
-  content: '_';
-  position: absolute;
-  color: #3b82f6;  blue-500 
-  animation: blink 1s step-end infinite;
-}*/
+
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }

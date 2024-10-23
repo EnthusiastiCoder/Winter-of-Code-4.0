@@ -3,7 +3,7 @@ import Image from 'next/image'
 import footer from '../public/footer.svg'
 import instagram from '../public/instagram.svg'
 import twitter from '../public/twitter.svg'
-import facebook from '../public/facebook.svg'
+import discord from '../public/discordlogo.svg'
 import linkedin from '../public/linkedin.svg'
 import mailbox from '../public/mailbox.svg'
 import submit from '../public/submit.svg'
@@ -27,11 +27,19 @@ const Footer = () => {
                     <div className="w-full text-scale-305 text-black font-kleemax border-outline">
                     WOC                    
                     </div>
-                    <div className="flex gap-[4%]">
-                        <Image className="w-[22%]" src={instagram} alt="instagram" />
-                        <Image className="w-[22%]" src={twitter}  alt="twitter" />
-                        <Image className="w-[22%]" src={facebook} alt="facebook" />
-                        <Image className="w-[22%]" src={linkedin} alt="linkedin" />
+                    <div className="flex gap-[4%] items-center justify-start">
+                        <Link href="https://www.instagram.com/gdsciiitkalyani/" target="_blank" rel="noopener noreferrer" className="w-[22%]">
+                            <Image className="bg-gradient-radial from-white via-white via-60% to-transparent to-60% hover:scale-110 duration-700" src={instagram} alt="instagram" />
+                        </Link>
+                        <Link href="https://x.com/gdsciiitkalyani" target="_blank" rel="noopener noreferrer" className="w-[22%]">
+                            <Image className="bg-gradient-radial from-white via-white via-60% to-transparent to-60%" src={twitter} alt="twitter" />
+                        </Link>
+                        <Link href="https://discord.gg/ePBMbdKdKG" target="_blank" rel="noopener noreferrer" className="w-[22%]">
+                            <Image className="p-[7.5%]" src={discord} alt="discord" />
+                        </Link>
+                        <Link href="https://www.linkedin.com/company/gdsc-iiit-kalyani/" target="_blank" rel="noopener noreferrer" className="w-[19%] relative">
+                            <Image className="bg-gradient-radial from-white via-white via-65% to-transparent to-65%" src={linkedin} alt="linkedin" />
+                        </Link>
                     </div>
             </div>
             <div className="flex-col flex w-[50%] m-[1%] justify-end items-center text-center">
@@ -58,7 +66,7 @@ const Footer = () => {
                         <Image className="w-full" src={mailbox} alt="mailbox" />
                         <input type="text" id="terminal-input" className="absolute bottom-[7%] w-full h-full font-kleemax text-scale-160 text-wrap overflow-scroll pt-[6%] px-[8%] uppercase terminal-input placeholder-orgs" placeholder="____"></input>
                     </div>
-                    <Image className="w-[16%]" src={submit} alt="submit" onClick={handleClick}/>
+                    <Image className="w-[16%] cursor-pointer" src={submit} alt="submit" onClick={handleClick}/>
                 </div>
             </div>
         </div>

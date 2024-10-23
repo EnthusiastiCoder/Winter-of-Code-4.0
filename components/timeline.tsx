@@ -56,7 +56,7 @@ const TimelineCard = ({ event, index }: TimelineCardProps) => {
     var source = isEven ? asset2 : asset3
     var TBA = true;
     return (
-        <div className={`z-20 w-full sm:flex ${index%2===0 ? "flex-row-reverse" : ""}`}>
+        <div className={`sm:mt-[-5%] w-full sm:flex ${index%2===0 ? "flex-row-reverse" : ""}`}>
             <div className={`relative w-fit max-w-[80%] sm:max-w-[40%] mx-auto sm:mx-0`}>
                 <Image className="backdrop-blur" src={asset1} alt="timeline card"/>
                 <div className='absolute top-0 left-0 p-[2%] font-kleemax font-xl w-[40%] text-center text-white text-scale-30 text-nowrap overflow-hidden'>
@@ -86,13 +86,13 @@ const TimelineCard = ({ event, index }: TimelineCardProps) => {
 
 const Timeline = () => {
     return (
-        <section className='w-full h-full mx-auto pt-[10%] bg-black'>
+        <section className='w-full h-full mx-auto pt-[10%] bg-black' id="timeline">
             <div className='text-center text-timeline font-kleemax text-scale-40 drop-shadow-red'>
                 TIMELINE
             </div>
             <div className='w-full p-[10%] sm:p-[5%] relative'>
             <Image className="z-20 mx-auto w-[30%] mb-[10%] " src={start} alt="start" />
-            <div className='hidden sm:block z-10 h-[76.9%] w-[0.4%] mx-auto bg-white absolute top-[9.4%] left-[49.8%]'></div> 
+            <div className='hidden sm:block z-10 h-[72.4%] w-[0.4%] mx-auto bg-white absolute top-[11.2%] left-[49.8%]'></div> 
             <div className='sm:hidden z-10 h-[7.3%] w-[0.4%] mx-auto bg-gradient-to-b from-white to-timeline absolute top-[8.2%] left-[49.8%]'></div>
             <div className='sm:hidden z-10 h-[4.1%] w-[0.4%] mx-auto bg-gradient-to-t from-white to-timeline absolute bottom-[10.7%] left-[49.8%]'></div>
             {timelineData.map((event, index) => (

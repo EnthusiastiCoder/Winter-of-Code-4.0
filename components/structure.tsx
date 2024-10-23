@@ -66,14 +66,17 @@ export default function Structure({
 
                 // Extract the multiplier number from the class name
                 const className = Array.from(element.classList).find(cls => cls.startsWith('text-scale'));
-                const scaleNumberMatch = className?.match(/text-scale-(\d+(\.\d+)?)/);
-                
-                if (scaleNumberMatch) {
-                    const scaleNumber = parseFloat(scaleNumberMatch[1]);
+                const scaleNumberMatch = className?.match(/text-scale-(\d+(\.\d+)?)-?(\d+(\.\d+)?)?/);
+            
+            if (scaleNumberMatch) {
+                const scaleNumber = parseFloat(scaleNumberMatch[1]);
+                const additionalScale = scaleNumberMatch[3] ? parseFloat(scaleNumberMatch[3]) : 0;
 
-                    // Set the font size to parent's width multiplied by the extracted number
-                    element.style.fontSize = `${parentWidth * scaleNumber/1000}px`;
-                }
+                // Set the font size to parent's width multiplied by the extracted number
+                // and add the additional scale
+                const fontSize = parentWidth * scaleNumber / 1000 + additionalScale;
+                element.style.fontSize = `${fontSize}px`;
+            }
             }
         });
     };
@@ -88,7 +91,7 @@ export default function Structure({
     const timeout = setTimeout(() => {
       setFontSizeForTextScaleElements();
       console.log('interval')
-    }, 400);
+    }, 300);
 
     // Clean up event listener on unmount
     return () => {

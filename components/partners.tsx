@@ -4,7 +4,7 @@ import asset1 from '../public/partner.svg'
 const Partners = () => {
     var TBA = true;
     return (
-        <section className='w-full h-full mx-auto mt-[10%]'>
+        <section className='w-full h-full mx-auto mt-[10%]' id="partners">
             <div className='text-center text-partner font-kleemax text-scale-40 drop-shadow-red'>
             COMMUNITY PARTNERS
             </div>

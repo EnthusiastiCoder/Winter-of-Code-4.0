@@ -49,7 +49,7 @@ const OrgCard = ({title,desc} : Org) => {
 const Organisations = () => {
     var TBA = true;
     return (
-        <section className='w-full h-full mx-auto pt-[10%] bg-black'>
+        <section className='w-full h-full mx-auto pt-[10%] bg-black' id="orgs">
             <div className='text-center text-orgs font-kleemax text-scale-40 drop-shadow-gold'>
             ORGANISATIONS
             </div>
