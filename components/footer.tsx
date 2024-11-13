@@ -32,13 +32,13 @@ const Footer = () => {
                             <Image className="bg-gradient-radial from-white via-white via-60% to-transparent to-60% hover:scale-110 duration-700" src={instagram} alt="instagram" />
                         </Link>
                         <Link href="https://x.com/gdsciiitkalyani" target="_blank" rel="noopener noreferrer" className="w-[22%]">
-                            <Image className="bg-gradient-radial from-white via-white via-60% to-transparent to-60%" src={twitter} alt="twitter" />
+                            <Image className="bg-gradient-radial from-white via-white via-60% to-transparent to-60% hover:scale-110 duration-700" src={twitter} alt="twitter" />
                         </Link>
                         <Link href="https://discord.gg/ePBMbdKdKG" target="_blank" rel="noopener noreferrer" className="w-[22%]">
-                            <Image className="p-[7.5%]" src={discord} alt="discord" />
+                            <Image className="p-[7.5%] hover:scale-110 duration-700" src={discord} alt="discord" />
                         </Link>
                         <Link href="https://www.linkedin.com/company/gdsc-iiit-kalyani/" target="_blank" rel="noopener noreferrer" className="w-[19%] relative">
-                            <Image className="bg-gradient-radial from-white via-white via-65% to-transparent to-65%" src={linkedin} alt="linkedin" />
+                            <Image className="bg-gradient-radial from-white via-white via-65% to-transparent to-65% hover:scale-110 duration-700" src={linkedin} alt="linkedin" />
                         </Link>
                     </div>
             </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
                 {resources.map((resource, index) => {
                     return (
-                        <Link href={resource.link} target="_blank" rel="noopener noreferrer" key={index} className="text-scale-30 text-white font-chakra w-[90%] m-[1%]">
+                        <Link href={resource.link} target="_blank" rel="noopener noreferrer" key={index} className="text-scale-30 text-white font-chakra w-[90%] m-[1%] hover:scale-110 duration-700">
                             {resource.title}
                         </Link>
                     );

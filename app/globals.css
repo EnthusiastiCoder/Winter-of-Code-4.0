@@ -41,8 +41,17 @@ hr {
   text-shadow: 0 0 0 #E2AA06;
 }
 
-
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
+}
+
+
+:root::-webkit-scrollbar{
+  display: none;
+}
+
+:root {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
