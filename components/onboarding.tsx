@@ -7,7 +7,7 @@ import JumbleText from '@/components/jumble'
 const Register = () => {
     
     return (
-        <section className="bg-black w-full relative h-[90vh] flex flex-col justify-evenly">
+        <section className="bg-black w-full relative h-[90vh] flex flex-col justify-evenly" id="onboarding">
             <div className="w-full flex justify-end overflow-x-clip h-[20%] sm:h-[15vh] relative overflow-y-visible">
                 <Link href="https://gdgiiitk.bio.link/" 
                 rel="noopener noreferrer" target="_blank" className="absolute w-[80%] sm:w-[50vh] top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20 hover:scale-110 duration-700" >
