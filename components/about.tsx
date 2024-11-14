@@ -21,7 +21,7 @@ const AboutUs = () => {
                     </Link>
                 </div>
             </div>
-            <div className="w-full flex p-[5%] text-scale-20-5 text-grey">
+            <div className="w-full flex p-[5%] font-chakra text-scale-20-5 text-grey">
                 {description}
                 <Image className="absolute w-[50%] -bottom-[8vw] left-[25%] backdrop-blur" src={aboutus} alt="woc" />
             </div>
