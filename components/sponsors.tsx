@@ -10,7 +10,7 @@ import polygon from '../public/polygon.png'
 const Sponsors = () => {
     var TBA = true;
     return (
-        <section className='w-full h-full mx-auto mt-[10%]' id="sponsors">
+        <section className='w-full h-full mx-auto pt-[10%]' id="sponsors">
             <div className='text-center text-brand font-kleemax text-scale-40 drop-shadow-blue'>
                 SPONSORS
             </div>

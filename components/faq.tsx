@@ -91,7 +91,7 @@ const FAQPage = () => {
   };
 
     return (
-            <section className='w-full mx-auto mt-[10%] font-chakra'>
+            <section className='w-full mx-auto pt-[10%] font-chakra' id="faq">
                 <div className='text-center text-faq font-kleemax text-scale-40 drop-shadow-green relative'>
                     FAQ
                     <div className='w-[20%] absolute left-[40%] -top-[25%]'>

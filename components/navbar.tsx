@@ -5,11 +5,11 @@ import navline from '../public/navline.svg'
 import bars from '../public/bars.svg'
 import React from 'react';
 const navigation = [
-    { name: "Sponsors", href: "#", current: false },
-    { name: "Projects", href: "#", current: false },
-    { name: "Timeline", href: "#", current: false },
-    { name: "Orgs", href: "#", current: false },
-    { name: "FAQ", href: "#", current: false },
+    { name: "Timeline", href: "#timeline", current: false },
+    { name: "Orgs", href: "#orgs", current: false },
+    { name: "Projects", href: "#projects", current: false },
+    { name: "Sponsors", href: "#sponsors", current: false },
+    { name: "FAQ", href: "#faq", current: false },
   ];
 
 const Navbar = () => {

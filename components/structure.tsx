@@ -15,6 +15,7 @@ import Timeline from "@/components/timeline";
 import Organisations from "@/components/organisations";
 import Sponsors from "@/components/sponsors";
 import Partners from "@/components/partners";
+import Projects from "@/components/projects";
 import Carousel from "@/components/carousel";
 
 import asset1 from '../public/platinum.svg'
@@ -110,6 +111,7 @@ export default function Structure({
         <AboutUs/>
         <Timeline/>
         <Organisations/>
+        <Projects/>
         <Sponsors/>
         <FAQPage/>
         <Partners/>
