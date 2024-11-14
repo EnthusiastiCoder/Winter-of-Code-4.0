@@ -6,6 +6,7 @@ import Link from 'next/link'
 import JumbleText from '@/components/jumble'
 
 const ParallelAnimatedTextBorderTrace = () => {
+  var TBA = true;
   const text = Array.from("WINTEROFCODE");
   const x = [0, 90, 180, 270, 360,450,0, 85, 195, 280, 365, 450];
   return (
@@ -34,9 +35,13 @@ const ParallelAnimatedTextBorderTrace = () => {
                 <hr className="w-full max-w-[625px] h-[0.25vw] bg-gradient-to-l from-brand"/>
                 <div className="relative flex justify-center text-scale-30-5 bg-black drop-shadow-blue px-[1.5%] border-[0.25vw] text-brand hover:scale-110 duration-700">
                     <div className='absolute top-right-arrow right-[0.375vw] top-[0.3vw] sm:top-[0.45vw]'></div>
+                    {TBA ? <div className="text-nowrap pt-[1.5%] font-kleemax">
+                            <JumbleText text="COMING SOON" id="registerhere"/>
+                    </div>
+                    :
                     <Link href="https://winterofcode.devfolio.co/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
                             <JumbleText text="REGISTER HERE" id="registerhere"/>
-                    </Link>
+                    </Link>}
                 </div>
                 <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
             </div>

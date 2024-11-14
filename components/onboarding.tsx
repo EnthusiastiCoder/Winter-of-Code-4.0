@@ -5,6 +5,7 @@ import discord from '../public/discord.svg'
 import BorderText from '@/components/bordertext'
 import JumbleText from '@/components/jumble'
 const Register = () => {
+    var TBA = true;
     
     return (
         <section className="bg-black w-full relative h-[90vh] flex flex-col justify-evenly" id="onboarding">
@@ -22,9 +23,13 @@ const Register = () => {
                 <hr className="w-full h-[0.25vw] bg-gradient-to-l from-brand"/>
                 <div className="relative flex justify-center text-scale-30-5 bg-black drop-shadow-blue px-[1.5%] border-[0.25vw] text-brand hover:scale-110 duration-700">
                     <div className='absolute top-right-arrow right-[0.375vw] top-[0.3vw] sm:top-[0.45vw]'></div>
+                    {TBA ? 
+                    <div className="text-nowrap pt-[1.5%] font-kleemax">
+                        <JumbleText text="COMING SOON" id="registerhere"/>
+                    </div>:
                     <Link href="https://winterofcode.devfolio.co/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
                             <JumbleText text="REGISTER HERE" id="registerhere"/>
-                    </Link>
+                    </Link>}
                 </div>
                 <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
             </div>
