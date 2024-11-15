@@ -5,7 +5,7 @@ import discord from '../public/discord.svg'
 import BorderText from '@/components/bordertext'
 import JumbleText from '@/components/jumble'
 const Register = () => {
-    var TBA = true;
+    var TBA = false;
     
     return (
         <section className="bg-black w-full relative h-[90vh] flex flex-col justify-evenly" id="onboarding">

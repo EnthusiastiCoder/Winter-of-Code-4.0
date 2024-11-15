@@ -6,7 +6,7 @@ import Link from 'next/link'
 import JumbleText from '@/components/jumble'
 
 const ParallelAnimatedTextBorderTrace = () => {
-  var TBA = true;
+  var TBA = false;
   const text = Array.from("WINTEROFCODE");
   const x = [0, 90, 180, 270, 360,450,0, 85, 195, 280, 365, 450];
   return (

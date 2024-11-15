@@ -16,6 +16,7 @@ import Organisations from "@/components/organisations";
 import Sponsors from "@/components/sponsors";
 import Partners from "@/components/partners";
 import Projects from "@/components/projects";
+import Team from "@/components/team";
 import Carousel from "@/components/carousel";
 
 import asset1 from '../public/platinum.svg'

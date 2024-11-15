@@ -14,6 +14,10 @@
   }  
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .top-right-arrow {
   border-left: 1.5vw solid transparent;
   border-top: 1.5vw solid #609CFF;
