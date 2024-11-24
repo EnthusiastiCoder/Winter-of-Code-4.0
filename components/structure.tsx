@@ -3,21 +3,10 @@ import type { Metadata } from "next";
 import { Inter, Chakra_Petch } from "next/font/google";
 import localfont from "next/font/local";
 import "../app/globals.css";
+import { useEffect } from "react";
 import Head from "next/head";
 import Navbar from "@/components/navbar";
-import Register from "@/components/onboarding";
 import Footer from "@/components/footer";
-import AboutUs from "@/components/about";
-import Script from "next/script";
-import { useEffect } from "react";
-import FAQPage from "@/components/faq";
-import Timeline from "@/components/timeline";
-import Organisations from "@/components/organisations";
-import Sponsors from "@/components/sponsors";
-import Partners from "@/components/partners";
-import Projects from "@/components/projects";
-import Team from "@/components/team";
-import Carousel from "@/components/carousel";
 
 import asset1 from '../public/platinum.svg'
 import asset2 from '../public/gold.svg'
@@ -38,7 +27,7 @@ const kleemax = localfont({
     }],
     variable: "--font-kleemax"
 })
-
+var textScale: () => void;
 export default function Structure({
   children,
 }: Readonly<{
@@ -82,6 +71,7 @@ export default function Structure({
             }
         });
     };
+    textScale=setFontSizeForTextScaleElements;
     // Set the initial font size for all matching elements
     setFontSizeForTextScaleElements();
 
@@ -91,6 +81,10 @@ export default function Structure({
     window.addEventListener('load', setFontSizeForTextScaleElements);
     
     const timeout = setTimeout(() => {
+      setFontSizeForTextScaleElements();
+    }, 300);
+    
+    const interval = setInterval(() => {
       setFontSizeForTextScaleElements();
       console.log('interval')
     }, 300);
@@ -102,23 +96,15 @@ export default function Structure({
         window.removeEventListener('click', setFontSizeForTextScaleElements);
         window.addEventListener('load', setFontSizeForTextScaleElements);
         clearTimeout(timeout);
+        clearInterval(interval);
     };
 }, []);
   return (
-      <body className={`${kleemax.variable} ${chakra.variable} bg-black`}>
+      <body className={`${kleemax.variable} ${chakra.variable} bg-black`} onLoad={textScale}>
         
         <Navbar/>
-        <Register/>
-        <AboutUs/>
-        <Timeline/>
-        <Organisations/>
-        <Projects/>
-        <Sponsors/>
-        <FAQPage/>
-        <Partners/>
         {children}
         <Footer/>
-        <Script defer async src="https://apply.devfolio.co/v2/sdk.js"></Script>
       </body>
   );
 }

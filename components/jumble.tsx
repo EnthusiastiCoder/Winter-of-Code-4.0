@@ -1,14 +1,15 @@
 import { useEffect } from "react";
+var textDisplay="";
 const JumbleText = ({ text,id }: { text: string ,id:string}) => {
     useEffect(() => {
         const timeout = setTimeout(() => {
-            jumble(text,id);
+            jumble(id);
         }, 500);
 
         return () => clearTimeout(timeout);
     }, [text, id]);
 
-    const jumble = (text: string,id:string) => {
+    const jumble = (id:string) => {
         const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         let interval: NodeJS.Timeout | null = null;
 

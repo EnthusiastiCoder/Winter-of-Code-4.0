@@ -11,7 +11,7 @@ const Sponsors = () => {
     var TBA = true;
     return (
         <section className='w-full h-full mx-auto pt-[10%]' id="sponsors">
-            <div className='text-center text-brand font-kleemax text-scale-40 drop-shadow-blue'>
+            <div className='text-center text-sponsors font-kleemax text-scale-40 drop-shadow-gold'>
                 SPONSORS
             </div>
             {/*<div className="flex w-full">
@@ -25,7 +25,7 @@ const Sponsors = () => {
             <Image src={ethindia} alt="ETHINDIA LOGO" className="w-[20%]"/>
             </div>*/}
             {TBA ?
-            <div className="pt-[5%] flex w-full justify-center text-brand drop-shadow-blue font-kleemax text-scale-30 font-semibold">TO BE ANNOUNCED
+            <div className="pt-[5%] flex w-full justify-center text-sponsors drop-shadow-gold font-kleemax text-scale-30 font-semibold">TO BE ANNOUNCED
             </div>
             :
             <div className='w-full p-[10%] sm:p-[5%]'>

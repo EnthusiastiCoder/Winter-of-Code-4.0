@@ -8,7 +8,7 @@ const Register = () => {
     var TBA = false;
     
     return (
-        <section className="bg-black w-full relative h-[90vh] flex flex-col justify-evenly" id="onboarding">
+        <section className="bg-black w-full relative h-[80vh] sm:h-[90vh] flex flex-col pb-[10%] sm:pb-0 justify-evenly" id="onboarding">
             <div className="w-full flex justify-end overflow-x-clip h-[20%] sm:h-[15vh] relative overflow-y-visible">
                 <Link href="https://gdgiiitk.bio.link/" 
                 rel="noopener noreferrer" target="_blank" className="absolute w-[80%] sm:w-[50vh] top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-20 hover:scale-110 duration-700" >
@@ -28,14 +28,13 @@ const Register = () => {
                         <JumbleText text="COMING SOON" id="registerhere"/>
                     </div>:
                     <Link href="https://winterofcode.devfolio.co/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
-                            <JumbleText text="REGISTER HERE" id="registerhere"/>
+                        <JumbleText text="REGISTER HERE" id="registerhere2"/>
                     </Link>}
                 </div>
                 <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
             </div>
             <hr className="absolute bottom-0 flex w-full bg-gradient-to-r from-black via-[#CCCCCC50]"/>
         </section>
-        
     );
 };
 

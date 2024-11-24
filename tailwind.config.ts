@@ -12,12 +12,14 @@ const config: Config = {
       brand:"#609CFF",
       orgs:"#E2AA06",
       faq:"#00FF84",
+      sponsors:"#E2AA06",
       partner:"#F84335",
       blite:"#FBBC0440",
       black:"#000000",
       white:"#FFFFFF",
       timeline:'#C23B30',
       grey:"#CCCCCC",
+      team:"#44A7F0",
     },
     extend: {
       backgroundImage: {
@@ -44,7 +46,10 @@ const config: Config = {
         ],
         blue: [
           "0 0 1vw rgba(96,156,255, 1)",
-        ]        
+        ],
+        sky: [
+          "0 0 1vw rgba(68,167,240, 1)",
+        ],
       },
       maxWidth: {
         '1/5': '20%',
