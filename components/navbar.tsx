@@ -24,7 +24,7 @@ const Navbar = () => {
         <nav className="z-40 sticky flex-col flex w-full top-0 gap-[1%]">
             <div className="flex w-full justify-center h-full pt-[calc(0.5%+8px)] gap-[5%] bg-black pb-[8px]">
                 <div className="flex w-[70%]"></div>
-                <Link href="#onboarding" className="text-scale-30-5 w-[14%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] sm:translate-y-[-40%] flex justify-center text-brand font-kleemax">
+                <Link href="/" className="text-scale-30-5 w-[14%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] sm:translate-y-[-40%] flex justify-center text-brand font-kleemax">
                     WOC
                 </Link>
                 <div className="flex-col flex sm:flex-row w-full items-end sm:items-center justify-end mr-[2%] gap-[1%]">

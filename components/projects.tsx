@@ -54,7 +54,7 @@ const ProjectCard = ({project}: {project: Project}) => {
                 See project
                 </div>
                 {isOpen && (
-                    <div className="fixed z-50 inset-0 bg-black bg-opacity-75 flex items-center justify-center backdrop-blur-[calc(0.1*(1vw-3.6px)+0.5px)]" onClick={handleBackdropClick}>
+                    <div className="fixed z-50 inset-0 bg-black bg-opacity-75 flex items-center justify-center backdrop-blur-[calc(0.1*(1vw-3.6px)+0.5px)] modal" onClick={handleBackdropClick}>
                         <div className="relative w-[75%] h-fit">
                         <Image src={projectmodal} alt="project modal"/>
                         <div className='absolute top-0 left-[31.5%] w-[68.5%] h-full p-[3%] font-inter text-scale-10-5 text-brand text-wrap text-justify overflow-hidden'>{project.desc}</div>

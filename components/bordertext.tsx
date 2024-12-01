@@ -5,7 +5,7 @@ import React from 'react'
 import Link from 'next/link'
 import JumbleText from '@/components/jumble'
 
-const ParallelAnimatedTextBorderTrace = () => {
+const BorderText = () => {
   var TBA = false;
   const text = Array.from("WINTEROFCODE");
   const x = [0, 90, 180, 270, 360,450,0, 85, 195, 280, 365, 450];
@@ -49,38 +49,5 @@ const ParallelAnimatedTextBorderTrace = () => {
   );
 };
 
-const styles = `
-
-  @keyframes trace {
-    0% {
-      stroke-dashoffset: 0%;
-    }
-    100% {
-      stroke-dashoffset: 155%;
-    }
-  }
-
-  .text-trace {
-    
-    font-size: 70px;
-    stroke-dasharray: 150%,5%;
-    stroke-linejoin: round;
-    animation: trace 8s linear 1;
-  }
-
-  /* Add a glow effect */
-  .text-trace {
-    filter: drop-shadow(0 0 0.5vw rgba(96, 156, 255, 1));
-  }
-`;
-
-const BorderText = () => {
-  return (
-    <>
-      <style>{styles}</style>
-      <ParallelAnimatedTextBorderTrace />
-    </>
-  );
-};
 
 export default BorderText;

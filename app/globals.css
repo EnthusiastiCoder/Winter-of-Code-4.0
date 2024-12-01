@@ -59,3 +59,57 @@ hr {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
+@keyframes trace {
+  0% {
+    stroke-dashoffset: 0%;
+  }
+  100% {
+    stroke-dashoffset: 155%;
+  }
+}
+
+.text-trace {
+  font-size: 70px;
+  stroke-dasharray: 150%,5%;
+  stroke-linejoin: round;
+  animation: trace 8s linear 1;
+}
+
+.text-trace {
+  filter: drop-shadow(0 0 0.5vw rgba(96, 156, 255, 1));
+}
+
+@keyframes modal {
+  0% {
+    opacity: 0%;
+    scale : 0%;
+  }
+  100% {
+    opacity: 100%;
+    scale : 100%;
+  }
+}
+
+@keyframes glitch {
+  0% { text-shadow: 1% 0 0 rgba(255,0,0,0.75), -0.5% -1% 0 rgba(0,255,0,0.75), 0.5% 1% 0 rgba(0,0,255,0.75); }
+  14% { text-shadow: 1% 0 0 rgba(255,0,0,0.75), -1% -0.5% 0 rgba(0,255,0,0.75), -0.5% 1% 0 rgba(0,0,255,0.75); }
+  28% { text-shadow: -1% -0.5% 0 rgba(255,0,0,0.75), 0.5% 0.5% 0 rgba(0,255,0,0.75), -1% -1% 0 rgba(0,0,255,0.75); }
+  42% { text-shadow: -0.5% 0 0 rgba(255,0,0,0.75), 0.5% -0.5% 0 rgba(0,255,0,0.75), -0.5% 0.5% 0 rgba(0,0,255,0.75); }
+  56% { text-shadow: 0.5% 1% 0 rgba(255,0,0,0.75), 1% 0 0 rgba(0,255,0,0.75), 0 -1% 0 rgba(0,0,255,0.75); }
+  70% { text-shadow: -0.5% 0 0 rgba(255,0,0,0.75), -0.5% -0.5% 0 rgba(0,255,0,0.75), 0.5% 1% 0 rgba(0,0,255,0.75); }
+  84% { text-shadow: 0.5% 1% 0 rgba(255,0,0,0.75), 0 0 0 rgba(0,255,0,0.75), 0 -1% 0 rgba(0,0,255,0.75); }
+  100% { text-shadow: 1% 0 0 rgba(255,0,0,0.75), -0.5% -1% 0 rgba(0,255,0,0.75), 0.5% 1% 0 rgba(0,0,255,0.75); }
+}
+
+@keyframes shake {
+  0% { transform: translate(-1%, -0.5%); }
+  25% { transform: translate(0.5%, 0); }
+  50% { transform: translate(-1%, 0.5%); }
+  75% { transform: translate(0.5%, -0.5%); }
+  100% { transform: translate(-1%, -0.5%); }
+}
+
+.modal {
+  animation: modal 200ms linear 1;
+}
