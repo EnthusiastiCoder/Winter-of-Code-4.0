@@ -23,7 +23,7 @@ const orgsData:Org[] = [
 
 const OrgCard = ({org} : {org:Org}) => {
     return (
-            <a className="relative w-[45%] sm:w-[30%] m-[2%] sm:m-[1%] hover:scale-105 duration-700" href={org.website} rel="noopener noreferrer" target="_blank" >
+            <a className="relative w-[45%] sm:w-[20%] m-[2%] sm:m-[1%] hover:scale-105 duration-700" href={org.website} rel="noopener noreferrer" target="_blank" >
                 <Image className="backdrop-blur" src={asset1} alt="org card"/>
                 <div className='absolute bottom-[4%] left-[10%] w-[80%] align-middle font-kleemax text-scale-40-4 text-center text-orgs text-nowrap overflow-hidden'>
                 {org.name.toUpperCase()}
