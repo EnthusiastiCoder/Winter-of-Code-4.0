@@ -2,52 +2,43 @@ import Image from 'next/image'
 import asset1 from '../public/org.svg'
 
 interface Org{
-    title:string;
-    desc:string;
+    name:string;
+    website:string;
 }
-const text='Lorem ipsum dolor sit amet consectetur. Pharetra orci tellus suspendisse vitae nunc. Pharetra facilisis ornare bibendum ultricies tincidunt interdum. Mi iaculis id quisque a. Diam in sed orci felis scelerisque. Id ultrices vitae in tellus eget sit. Eu odio neque feugiat.';
-
 const orgsData:Org[] = [
     {
-        title: 'Community 01',
-        desc: text
+        name: 'Tiled',
+        website: 'https://www.mapeditor.org/'
     },
     {
-        title: 'Community 02',
-        desc: text
+        name: 'SQL Page',
+        website: 'https://sql-page.com/'
     },
     {
-        title: 'Community 03',
-        desc: text
-    },
-    {
-        title: 'Community 04',
-        desc: text
-    },
-    {
-        title: 'Community 05',
-        desc: text
+        name: 'Mixxx',
+        website: 'http://mixxx.org/'
     },
     
 ];
 
-const OrgCard = ({title,desc} : Org) => {
+const OrgCard = ({org} : {org:Org}) => {
     return (
-            <div className="relative w-[45%] sm:w-[30%] m-[2%] sm:m-[1%]">
+            <a className="relative w-[45%] sm:w-[30%] m-[2%] sm:m-[1%] hover:scale-105 duration-700" href={org.website} rel="noopener noreferrer" target="_blank" >
                 <Image className="backdrop-blur" src={asset1} alt="org card"/>
-                <div className='absolute top-[4%] left-[10%] w-[80%] align-middle font-kleemax text-scale-60 text-center text-timeline text-nowrap overflow-hidden'>
-                {title.toUpperCase()}
+                <div className='absolute bottom-[4%] left-[10%] w-[80%] align-middle font-kleemax text-scale-40-4 text-center text-orgs text-nowrap overflow-hidden'>
+                {org.name.toUpperCase()}
                 </div>
-                <div className='absolute top-[25%] left-0 py-[3%] px-[4%] w-[100%] h-[62%] text-left text-grey text-scale-40 overflow-hidden'>
-                {desc}
+                <div className="absolute left-[5%] bottom-[10%] w-[90%] h-[90%] items-center flex">
+                <Image src={`/orgs/${org.name}.png`} width="500" height="500"  alt={org.name}/>
                 </div>
-            </div>
+                
+            </a>
     );
 };
 
 
 const Organisations = () => {
-    var TBA = true;
+    var TBA = false;
     return (
         <section className='w-full h-full mx-auto pt-[10%] bg-black' id="orgs">
             <div className='text-center text-orgs font-kleemax text-scale-40 drop-shadow-gold'>
@@ -58,7 +49,7 @@ const Organisations = () => {
             :
             <div className='w-full p-[10%] sm:p-[5%] flex justify-center flex-wrap'>
             {orgsData.map((org, index)=>
-            <OrgCard key={index} title={org.title} desc={org.desc}/>
+            <OrgCard key={index} org={org}/>
             )}
             </div>            
             }
