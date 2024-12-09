@@ -24,7 +24,7 @@ const numerate = (index:number) => {
 const timelineData:TEvent[] = [
     {
       startDate: '15-11-2024',
-      endDate: '10-12-2024',
+      endDate: '20-12-2024',
       title: 'Student Applications',
       description: 'This marks the period when students can submit their applications to participate in Winter of Code. Ensure your application is complete before the deadline!'
     },

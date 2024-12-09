@@ -16,7 +16,7 @@ const orgsData:Org[] = [
     },
     {
         name: 'Mixxx',
-        website: 'http://mixxx.org/'
+        website: 'https://mixxx.org/'
     },
     
 ];

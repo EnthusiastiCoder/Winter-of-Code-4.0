@@ -21,7 +21,6 @@ export default function Home() {
         <Projects/>
         <Sponsors/>
         <Partners/>
-        <FAQPage/>
     </main>
   );
 }

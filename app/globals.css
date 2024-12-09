@@ -60,6 +60,11 @@ hr {
   -ms-overflow-style: none;
 }
 
+.scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 @keyframes trace {
   0% {
     stroke-dashoffset: 0%;
