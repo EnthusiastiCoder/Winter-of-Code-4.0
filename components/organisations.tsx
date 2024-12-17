@@ -18,7 +18,26 @@ const orgsData:Org[] = [
         name: 'Mixxx',
         website: 'https://mixxx.org/'
     },
-    
+    {
+        name: 'Brisa',
+        website: 'https://brisa.build/'
+    },
+    {
+        name: 'ChartDB',
+        website: 'https://chartdb.io/'
+    },
+    {
+        name: 'Tensorzero',
+        website: 'https://www.tensorzero.com/'
+    },
+    {
+        name: 'DebugSwift',
+        website: 'https://cocoapods.org/pods/DebugSwift'
+    },
+    {
+        name: 'ClassroomIO',
+        website: 'https://classroomio.com/'
+    },
 ];
 
 const OrgCard = ({org} : {org:Org}) => {
@@ -28,7 +47,7 @@ const OrgCard = ({org} : {org:Org}) => {
                 <div className='absolute bottom-[4%] left-[10%] w-[80%] align-middle font-kleemax text-scale-40-4 text-center text-orgs text-nowrap overflow-hidden'>
                 {org.name.toUpperCase()}
                 </div>
-                <div className="absolute left-[5%] bottom-[10%] w-[90%] h-[90%] items-center flex">
+                <div className="absolute left-[10%] bottom-[15%] w-[80%] h-[80%] items-center flex">
                 <Image src={`/orgs/${org.name}.png`} width="500" height="500"  alt={org.name}/>
                 </div>
                 
@@ -47,7 +66,7 @@ const Organisations = () => {
             {TBA ?
             <div className="pt-[5%] flex w-full justify-center text-orgs drop-shadow-gold font-kleemax text-scale-30 font-semibold">TO BE ANNOUNCED</div>
             :
-            <div className='w-full p-[10%] sm:p-[5%] flex justify-center flex-wrap'>
+            <div className='w-full p-[10%] sm:p-[5%] gap-[2%] flex justify-center flex-wrap'>
             {orgsData.map((org, index)=>
             <OrgCard key={index} org={org}/>
             )}

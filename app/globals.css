@@ -50,18 +50,13 @@ hr {
   50% { opacity: 0; }
 }
 
-
-:root::-webkit-scrollbar{
-  display: none;
-}
-
 :root {
   scrollbar-width: none;
-  -ms-overflow-style: none;
 }
 
 .scrollbar {
-  scrollbar-width: none;
+  scrollbar-width: 5px;
+  scrollbar-color: #609CFF transparent;
   -ms-overflow-style: none;
 }
 
