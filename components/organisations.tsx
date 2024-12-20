@@ -19,6 +19,18 @@ const orgsData:Org[] = [
         website: 'https://www.mapeditor.org/'
     },
     {
+        name: 'ClassroomIO',
+        website: 'https://classroomio.com/'
+    },
+    {
+        name: 'ChartDB',
+        website: 'https://chartdb.io/'
+    },
+    {
+        name: 'Brisa',
+        website: 'https://brisa.build/'
+    },
+    {
         name: 'TensorZero',
         website: 'https://www.tensorzero.com/'
     },
@@ -26,10 +38,7 @@ const orgsData:Org[] = [
         name: 'GDevelop',
         website: 'https://gdevelop.io/'
     },
-    {
-        name: 'ClassroomIO',
-        website: 'https://classroomio.com/'
-    },
+    
     {
         name: 'SQLPage',
         website: 'https://sql-page.com/'
@@ -39,16 +48,8 @@ const orgsData:Org[] = [
         website: 'https://b1n.io/'
     },
     {
-        name: 'Brisa',
-        website: 'https://brisa.build/'
-    },
-    {
         name: 'Open World Holidays',
         website: 'https://pypi.org/project/holidays/'
-    },
-    {
-        name: 'ChartDB',
-        website: 'https://chartdb.io/'
     },
     {
         name: 'Laudspeaker',
