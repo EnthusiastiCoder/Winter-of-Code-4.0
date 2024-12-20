@@ -44,12 +44,13 @@ const orgsData:Org[] = [
         website: 'https://sql-page.com/'
     },
     {
-        name: 'b1n',
-        website: 'https://b1n.io/'
-    },
-    {
         name: 'Open World Holidays',
         website: 'https://pypi.org/project/holidays/'
+    },
+/*
+    {
+        name: 'b1n',
+        website: 'https://b1n.io/'
     },
     {
         name: 'Laudspeaker',
@@ -67,6 +68,7 @@ const orgsData:Org[] = [
         name: 'API Dash',
         website: 'https://apidash.dev/'
     },
+//*/
 ];
 
 const OrgCard = ({org} : {org:Org}) => {
