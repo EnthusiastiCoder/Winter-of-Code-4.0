@@ -7,9 +7,9 @@ interface Org{
 }
 const orgsData:Org[] = [
     {
-        name: 'Laudspeaker',
-        website: 'https://laudspeaker.com/'
-    }, 
+        name: 'OpenPrinting',
+        website: 'http://www.openprinting.org/'
+    },
     {
         name: 'DebugSwift',
         website: 'https://cocoapods.org/pods/DebugSwift'
@@ -21,6 +21,10 @@ const orgsData:Org[] = [
     {
         name: 'TensorZero',
         website: 'https://www.tensorzero.com/'
+    },
+    {
+        name: 'GDevelop',
+        website: 'https://gdevelop.io/'
     },
     {
         name: 'ClassroomIO',
@@ -47,8 +51,8 @@ const orgsData:Org[] = [
         website: 'https://chartdb.io/'
     },
     {
-        name: 'OpenPrinting',
-        website: 'http://www.openprinting.org/'
+        name: 'Laudspeaker',
+        website: 'https://laudspeaker.com/'
     },
     {
         name: 'Snapcrafters',
@@ -62,10 +66,6 @@ const orgsData:Org[] = [
         name: 'API Dash',
         website: 'https://apidash.dev/'
     },
-    {
-        name: 'GDevelop',
-        website: 'https://gdevelop.io/'
-    }
 ];
 
 const OrgCard = ({org} : {org:Org}) => {
