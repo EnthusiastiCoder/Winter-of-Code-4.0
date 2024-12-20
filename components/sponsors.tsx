@@ -1,38 +1,43 @@
 import Image from 'next/image'
-import asset1 from '../public/platinum.svg'
-import asset2 from '../public/gold.svg'
-import asset3 from '../public/silver.svg'
-import asset4 from '../public/bronze.svg'
-import devfolio from '../public/devfolio.png'
-import ethindia from '../public/ethindia.png'
-import polygon from '../public/polygon.png'
+
+const SponsorData = [
+    ["Devfolio", "Polygon","GitHub"],
+    ["Aptos","EthIndia"],
+    [],
+    []
+];
+
+const tier = ["Platinum", "Gold", "Silver", "Bronze"];
 
 const Sponsors = () => {
-    var TBA = true;
+    var TBA = false;
     return (
         <section className='w-full h-full mx-auto pt-[10%]' id="sponsors">
             <div className='text-center text-sponsors font-kleemax text-scale-40 drop-shadow-gold'>
                 SPONSORS
             </div>
-            {/*<div className="flex w-full">
-            <div className="apply-button" 
-            data-hackathon-slug="winterofcode" 
-            data-button-theme="light"
-            style={{height: '44px', width: '312px'}}>
-            </div>
-            <Image src={devfolio} alt="DEVFOLIO LOGO" className="w-[20%]"/>
-            <Image src={polygon} alt="POLYGON LOGO" className="w-[20%]"/>
-            <Image src={ethindia} alt="ETHINDIA LOGO" className="w-[20%]"/>
-            </div>*/}
             {TBA ?
             <div className="pt-[5%] flex w-full justify-center text-sponsors drop-shadow-gold font-kleemax text-scale-30 font-semibold">TO BE ANNOUNCED
             </div>
             :
-            <div className='w-full p-[10%] sm:p-[5%]'>
-            <Image className="mx-auto w-full my-[5%] backdrop-blur" src={asset1} alt="platinum sponsor" />
-            <Image className="mx-auto w-full my-[5%] backdrop-blur" src={asset2} alt="gold sponsor" />
-            <Image className="mx-auto w-full my-[5%] backdrop-blur" src={asset3} alt="silver sponsor" />
-            <Image className="mx-auto w-full my-[5%] backdrop-blur" src={asset4} alt="bronze sponsor" />
+            <div className='w-full p-[10%] sm:p-[5%] flex flex-col'>
+                {SponsorData.map((tierData, index) => {
+                    if (tierData.length === 0) {
+                        return "";
+                    }
+                    return (
+                        <div key={index} className='flex flex-wrap justify-center my-[2%] px-[5%] relative'>
+                            <Image className="backdrop-blur w-full" src={`${tier[index].toLowerCase()}.svg`} width="600" height="200" alt="sponsor card"/>
+                            <div className="absolute w-[80%] flex h-[60%] top-[25%] gap-[5%] items-center justify-center">
+                            {tierData.map((sponsor, index) => {
+                                return (
+                                    <Image key={index} className="backdrop-blur sm:w-[20%] h-auto w-[30%] hover:scale-105 duration-700" src={`/sponsors/${sponsor.toLowerCase()}.png`} width="600" height="200" alt="sponsor card"/>
+                                );
+                            })}
+                            </div>
+                        </div>
+                    );
+                })}
             </div>            
             }
             <hr className="flex mt-[10%] max-w-full flex-grow bg-gradient-to-r from-black via-[#CCCCCC50] to-black"/>

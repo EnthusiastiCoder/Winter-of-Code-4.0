@@ -7,45 +7,73 @@ interface Org{
 }
 const orgsData:Org[] = [
     {
-        name: 'Tiled',
-        website: 'https://www.mapeditor.org/'
-    },
-    {
-        name: 'SQL Page',
-        website: 'https://sql-page.com/'
-    },
-    {
-        name: 'Mixxx',
-        website: 'https://mixxx.org/'
-    },
-    {
-        name: 'Brisa',
-        website: 'https://brisa.build/'
-    },
-    {
-        name: 'ChartDB',
-        website: 'https://chartdb.io/'
-    },
-    {
-        name: 'Tensorzero',
-        website: 'https://www.tensorzero.com/'
-    },
+        name: 'Laudspeaker',
+        website: 'https://laudspeaker.com/'
+    }, 
     {
         name: 'DebugSwift',
         website: 'https://cocoapods.org/pods/DebugSwift'
-    },
+    },
+    {
+        name: 'Tiled',
+        website: 'https://www.mapeditor.org/'
+    },
+    {
+        name: 'TensorZero',
+        website: 'https://www.tensorzero.com/'
+    },
     {
         name: 'ClassroomIO',
         website: 'https://classroomio.com/'
-    },
+    },
+    {
+        name: 'SQLPage',
+        website: 'https://sql-page.com/'
+    },
+    {
+        name: 'b1n',
+        website: 'https://b1n.io/'
+    },
+    {
+        name: 'Brisa',
+        website: 'https://brisa.build/'
+    },
+    {
+        name: 'Open World Holidays',
+        website: 'https://pypi.org/project/holidays/'
+    },
+    {
+        name: 'ChartDB',
+        website: 'https://chartdb.io/'
+    },
+    {
+        name: 'OpenPrinting',
+        website: 'http://www.openprinting.org/'
+    },
+    {
+        name: 'Snapcrafters',
+        website: 'https://snapcraft.io/publisher/snapcrafters'
+    },
+    {
+        name: 'Mifos',
+        website: 'https://mifos.org/'
+    },
+    {
+        name: 'API Dash',
+        website: 'https://apidash.dev/'
+    },
+    {
+        name: 'GDevelop',
+        website: 'https://gdevelop.io/'
+    }
 ];
 
 const OrgCard = ({org} : {org:Org}) => {
     return (
             <a className="relative w-[45%] sm:w-[20%] m-[2%] sm:m-[1%] hover:scale-105 duration-700" href={org.website} rel="noopener noreferrer" target="_blank" >
                 <Image className="backdrop-blur" src={asset1} alt="org card"/>
-                <div className='absolute bottom-[4%] left-[10%] w-[80%] align-middle font-kleemax text-scale-40-4 text-center text-orgs text-nowrap overflow-hidden'>
-                {org.name.toUpperCase()}
+                <div className='absolute bottom-[4%] left-[10%] w-[80%] align-middle font-chakra font-bold text-scale-40-4 text-center text-orgs text-nowrap overflow-hidden'>
+                {org.name}
                 </div>
                 <div className="absolute left-[10%] bottom-[15%] w-[80%] h-[80%] items-center flex">
                 <Image src={`/orgs/${org.name}.png`} width="500" height="500"  alt={org.name}/>
