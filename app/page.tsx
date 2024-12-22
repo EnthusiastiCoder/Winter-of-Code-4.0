@@ -20,7 +20,6 @@ export default function Home() {
         <Organisations/>
         <Projects/>
         <Sponsors/>
-        <Partners/>
     </main>
   );
 }

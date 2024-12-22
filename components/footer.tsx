@@ -43,22 +43,22 @@ const Footer = () => {
                     </div>
             </div>
             <div className="flex-col flex w-[50%] m-[1%] justify-end items-center text-center">
-                <div className="text-scale-40 text-white font-chakra w-[90%] m-[1%]">
+                <div className="text-scale-40-5 text-white font-chakra w-[90%] m-[1%]">
                     RESOURCES
                 </div>
                 {resources.map((resource, index) => {
                     return (
-                        <Link href={resource.link} target="_blank" rel="noopener noreferrer" key={index} className="text-scale-30 text-white font-chakra w-[90%] m-[1%] hover:scale-110 duration-700">
+                        <Link href={resource.link} target="_blank" rel="noopener noreferrer" key={index} className="text-scale-30-5 text-white font-chakra w-[90%] m-[1%] hover:scale-110 duration-700">
                             {resource.title}
                         </Link>
                     );
                 })}
-                <div className="text-scale-40 text-white font-chakra text-wrap w-[90%] m-[1%]">
+                <div className="text-scale-40-6 text-white font-chakra text-wrap w-[90%] m-[1%]">
                     © GDG IIIT KALYANI 2024
                 </div>
             </div>
-            <div className="flex-col flex w-[25%] mt-[8%]">
-                <div className="text-scale-60 text-white font-kleemax text-wrap w-[90%] m-[1%]">
+            <div className="flex-col flex w-[25%] mt-[2%]">
+                <div className="text-scale-60-6 text-white font-kleemax text-wrap w-[90%] m-[1%]">
                     EMAIL US FOR MORE DETAILS
                 </div>
                 <div className="flex w-full justify-between">

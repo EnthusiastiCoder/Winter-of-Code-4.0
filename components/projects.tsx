@@ -481,6 +481,84 @@ const projectData: Project[] = [
     twitter: "",
     },
   },
+  {
+    name: "Snapcrafters.org",
+    developer: "Snapcrafters",
+    desc: "Proposal Ideas:\n\n1. Blog Section: Create a new section to display blog posts. Participants can take inspiration from https://soumyadghosh.github.io/website/ or https://merlijn.sebrechts.be/.\n\n2. Contact Page: Develop a functional contact page. Allow users to directly contact and request snaps.\n\nDocumentation Reference: https://gohugo.io/documentation/\n\nGeneral Notes for Participants:\n\n1. Core Skills Needed:\n   - Bash scripting.\n   - Hugo development.\n   - Debugging and maintaining software/snaps.\n\n2. Students are encouraged to propose their own ideas, especially around improving the CI system or enhancing the website."
+  ,
+    techstack: [    "HTML","JavaScript","Hugo","Bash"
+    ],
+    github: "https://github.com/snapcrafters/snapcrafters.org",
+    mentors: [
+      {
+        name: "Soumyadeep Ghosh",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/soumyadghosh/",
+          discord: "soumyatheman",
+          email: "soumyadghosh@ubuntu.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },  
+  {
+    name: "Snapcrafters CI",
+    developer: "Snapcrafters",
+    desc: "Proposal Ideas:\n\n1. Implement CI System in Repositories:\n   - Integrate the custom CI system into snap repositories that don’t currently use it.\n   - Verify and update snaps as needed. A comprehensive list of snaps, including their CI integration status and whether they are up-to-date, can be found here: https://snapcrafters.org/snap-packages/.\n\nDocumentation Reference: https://github.com/snapcrafters/ci-workshop\n\nGeneral Notes for Participants:\n\n1. Core Skills Needed:\n   - Bash scripting.\n   - Hugo development.\n   - Debugging and maintaining software/snaps.\n\n2. Students are encouraged to propose their own ideas, especially around improving the CI system or enhancing the website.",
+    techstack: [ "Bash","Makefile"
+    ],
+    github: "https://github.com/snapcrafters/ci",
+    mentors: [
+      {
+        name: "Soumyadeep Ghosh",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/soumyadghosh/",
+          discord: "soumyatheman",
+          email: "soumyadghosh@ubuntu.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },  
+  {
+    name: "The FFmpeg snap",
+    developer: "snapcrafters",
+    desc: "Proposal Ideas:\n\n1. Update the FFmpeg Snap:\n   - Fix existing issues in the FFmpeg snap.\n   - Update the snap to align with the latest FFmpeg release.\n\nDocumentation Reference: https://github.com/snapcrafters/snap-quickstart-workshop\n\nGeneral Notes for Participants:\n\n1. Core Skills Needed:\n   - Bash scripting.\n   - Hugo development.\n   - Debugging and maintaining software/snaps.\n\n2. Students are encouraged to propose their own ideas, especially around improving the CI system or enhancing the website."
+  ,
+    techstack: [ "Shell"
+    ],
+    github: "https://github.com/snapcrafters/ffmpeg",
+    mentors: [
+      {
+        name: "Soumyadeep Ghosh",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/soumyadghosh/",
+          discord: "soumyatheman",
+          email: "soumyadghosh@ubuntu.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  
 ];
 
 const asset = {
@@ -510,7 +588,7 @@ const ProjectCard = ({project}: {project: Project}) => {
                 <div className='absolute top-[4%] left-[10%] w-[80%] align-middle font-chakra text-scale-60 text-center text-brand text-nowrap overflow-hidden'>
                 {project.name.toUpperCase()}
                 </div>
-                <div className='absolute top-[16%] left-[20%] w-[60%] align-middle font-chakra text-scale-30-2 text-center text-brand text-nowrap overflow-hidden'>
+                <div className='absolute top-[16%] left-[20%] w-[60%] align-middle font-chakra text-scale-30-2 text-center text-[#CADEFF] text-nowrap overflow-hidden'>
                 {project.developer.toUpperCase()}
                 </div>
                 <div className='absolute top-[27%] left-0 py-[3%] px-[4%] w-full h-[53%] flex justify-center flex-wrap gap-x-[3%] text-grey text-center items-start text-scale-30 overflow-x-hidden overflow-y-auto scrollbar'>
