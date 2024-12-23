@@ -422,11 +422,11 @@ const projectData: Project[] = [
   },
   
   {
-    name: "Open World Holidays",
+    name: "Holidays Framework",
     developer: "Vacanza",
-    desc: "Proposal ideas:\n\nv1 Version: Focus on breaking changes for improved structure, standardization, and feature expansion.\n\n- Design and implement custom exceptions system\n- Work on entities standardization according to ISO-3166 standard\n- Improve l10n approach to have messages grouped by locale\n- Migrate documentation to mkdocs\n- Implement iCal data export support\n\nMore details at: https://github.com/vacanza/holidays/issues/1649",
+    desc: "Proposal ideas:\n\nv1 Version: Focus on breaking changes for improved structure, standardization, and feature expansion.\n\n- Design and implement custom exceptions system\n- Work on entities standardization according to ISO-3166 standard\n- Improve l10n approach to have messages grouped by locale\n- Migrate documentation to mkdocs\n- Implement iCal data export support\n\nMore details at: https://github.com/vacanza/holidays/labels/woc2025",
     techstack: [
-    "TypeScript"
+    "Python"
     ],
     github: "https://github.com/vacanza/holidays/",
     mentors: [
@@ -439,7 +439,7 @@ const projectData: Project[] = [
         twitter: "",
       },
     },{
-      name: "Kateryna Golovanova",
+      name: "Kate Golovanova",
       socials: {
         linkedin: "https://www.linkedin.com/in/kate-golovanova",
         discord: "",
@@ -559,6 +559,268 @@ const projectData: Project[] = [
     },
   },
   
+{
+  name: "libcupsfilters",
+  developer: "OpenPrinting",
+  desc: "Proposal Ideas:\n Add support for JPEG-XL as input format: https://github.com/OpenPrinting/libcupsfilters/issues/73\n Participants are encouraged to explore OpenPrinting in general (https://github.com/OpenPrinting/) and propose their own ideas."
+,
+  techstack: [ "C","C++"
+  ],
+  github: "https://github.com/OpenPrinting/libcupsfilters",
+  mentors: [
+    {
+      name: "Till Kamppeter",
+      socials: {
+        linkedin: "",
+        discord: "tillkamppeter",
+        email: "till.kamppeter@gmail.com",
+        twitter: "",
+      },
+    },
+    {
+      name: "Uddhav Phatak",
+      socials: {
+        linkedin: "",
+        discord: "",
+        email: "uddhavphatak2022@vitbhopal.ac.in",
+        twitter: "",
+      },
+    }
+
+
+  ],
+  socials: {
+    linkedin: "",
+    discord: "",
+    email: "",
+    twitter: "",
+  },
+},
+
+
+
+{
+  name: "Fuzzing",
+  developer: "OpenPrinting",
+  desc: "Proposal Ideas:\n\nApply OSS-Fuzz to cups-browsed: https://github.com/OpenPrinting/fuzzing/issues/4\n Participants are encouraged to explore OpenPrinting in general (https://github.com/OpenPrinting/) and propose their own ideas."
+,
+  techstack: [ "C","C++","Shell","Makefile"
+  ],
+  github: "https://github.com/OpenPrinting/fuzzing",
+  mentors: [
+    {
+      name: "Till Kamppeter",
+      socials: {
+        linkedin: "",
+        discord: "tillkamppeter",
+        email: "till.kamppeter@gmail.com",
+        twitter: "",
+      },
+    },
+    {
+      name: "Jiongchi Yu",
+      socials: {
+        linkedin: "",
+        discord: "",
+        email: "jiongchiyu@gmail.com",
+        twitter: "",
+      },
+    },
+
+  ],
+  socials: {
+    linkedin: "",
+    discord: "",
+    email: "",
+    twitter: "",
+  },
+},
+
+
+{
+  name: "IPP-USB",
+  developer: "OpenPrinting",
+  desc: "Proposal Ideas:\n Create an OCI container image of ipp-usb: https://github.com/OpenPrinting/ipp-usb/issues/93\n Participants are encouraged to explore OpenPrinting in general (https://github.com/OpenPrinting/) and propose their own ideas."
+,
+  techstack: [ "Go"
+  ],
+  github: "https://github.com/OpenPrinting/ipp-usb",
+  mentors: [
+    {
+      name: "Till Kamppeter",
+      socials: {
+        linkedin: "",
+        discord: "tillkamppeter",
+        email: "till.kamppeter@gmail.com",
+        twitter: "",
+      },
+    },
+    {
+      name: "Rudra Pratap Singh",
+      socials: {
+        linkedin: "",
+        discord: "",
+        email: "singhrudra5556@gmail.com",
+        twitter: "",
+      },
+    },
+  ],
+  socials: {
+    linkedin: "",
+    discord: "",
+    email: "",
+    twitter: "",
+  },
+},
+
+  {
+    name: "API Dash",
+    developer: "API Dash",
+    desc: "API Dash is a beautiful open-source cross-platform (macOS, Windows, Linux, Android & iOS) API Client built using Flutter, designed to help you easily create & customize API requests, visually inspect responses and generate API integration code. It serves as a lightweight alternative to Postman/Insomnia.\n\nProblem Statement:\nContributors are welcome to add the following features to API Dash:\n- WebSocket support\n- SSE support\n- MQTT support\n- GraphQL support\n- gRPC support\n- Figuring out how to build for various Linux packaging formats\n- Importers for OpenAPI, Insomnia, Hurl, HAR\n- Embedded WebView in Response Previewer\n- Git Support\n- API Workflow Builder\n- OAuth 2.0 auth"
+  ,
+    techstack: [ "Dart"
+    ],
+    github: "https://github.com/foss42/apidash",
+    mentors: [
+      {
+        name: "Ashita Prasad",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/ashitaprasad/",
+          discord: "",
+          email: "ashitaprasad.in@gmail.com",
+          twitter: "",
+        },
+      },
+      {
+        name: "Ankit Mahato",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/ankitmahato/",
+          discord: "",
+          email: "ankit@apidash.dev",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  
+  
+  
+  {
+    name: "Awesome Open Source Flutter Apps",
+    developer: "Flutter Gems",
+    desc: "A curated list of awesome open source Flutter apps. Analyse open source Flutter apps and derive unique insights helpful for other developers.\n\nProblem Statement:\nContributors are welcome to add new open source Flutter apps and develop code to analyze the listed Flutter apps to derive insights such as package dependencies, project health, project activity, and more."
+  ,
+    techstack: [ "Dart"
+    ],
+    github: "https://github.com/fluttergems/awesome-open-source-flutter-apps",
+    mentors: [
+      {
+        name: "Ashita Prasad",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/ashitaprasad/",
+          discord: "",
+          email: "ashitaprasad.in@gmail.com",
+          twitter: "",
+        },
+      },
+      {
+        name: "Ankit Mahato",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/ankitmahato/",
+          discord: "",
+          email: "ankit@apidash.dev",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  
+  /*
+  {
+    name: "Learn Python 3",
+    developer: "Ankit Mahato",
+    desc: "Free & Open Source book to master Python 3.\nProblem Statement:\nContributors are welcome to plan the next edition of the open-source Python Book, curate the existing contributions, and add new content to successfully release the next edition of the book."
+  ,
+    techstack: [ "Python"
+    ],
+    github: "https://github.com/animator/learn-python",
+    mentors: [
+      {
+        name: "Ashita Prasad",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/ashitaprasad/",
+          discord: "",
+          email: "ashitaprasad.in@gmail.com",
+          twitter: "",
+        },
+      },
+      {
+        name: "Ankit Mahato",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/ankitmahato/",
+          discord: "",
+          email: "ankit@apidash.dev",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  
+  //*/
+  
+  {
+    name: "BrainPunk",
+    developer: "Ankit Mahato",
+    desc: "A Brain Story Game (Puzzles + Lore) built using Flutter + Flame.\nProblem Statement:\n  BrainPunk was a game project offering a refreshing take on puzzle games. Contributors are welcome to:\n- Improve the game storyline and interweave more exciting puzzles.\n- Generate AI art for each puzzle and the storyline.\n- Add responsive design.\n- Release the game on Android and Apple app stores."
+  ,
+    techstack: [ "Dart","HTML"
+    ],
+    github: "https://github.com/animator/brain_punk",
+    mentors: [
+      {
+        name: "Ashita Prasad",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/ashitaprasad/",
+          discord: "",
+          email: "ashitaprasad.in@gmail.com",
+          twitter: "",
+        },
+      },
+      {
+        name: "Ankit Mahato",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/ankitmahato/",
+          discord: "",
+          email: "ankit@apidash.dev",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },  
 ];
 
 const asset = {
@@ -608,8 +870,11 @@ const ProjectCard = ({project}: {project: Project}) => {
                     <div className="fixed z-50 inset-0 bg-black bg-opacity-75 flex items-center justify-center backdrop-blur-[calc(0.1*(1vw-3.6px)+0.5px)] modal" onClick={handleBackdropClick}>
                     <div className="relative w-[75%]">
                         <Image src={projectmodal}  alt="project modal"/>
-                        <div className="absolute font-kleemax text-brand top-[0%] left-[0%] w-[30.2%] h-[89%] p-[1.5%] text-center overflow-x-hidden overflow-y-auto scrollbar text-scale-20-4 flex flex-col justify-between gap-[2%]" style={{clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 5%)"}}>
+                        <div className="absolute font-chakra text-brand top-[0%] left-[0%] w-[30.2%] h-[89%] p-[1.5%] text-center overflow-x-hidden overflow-y-auto scrollbar text-scale-20-4 flex flex-col justify-between gap-[2%]" style={{clipPath: "polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 5%)"}}>
                             {project.name.toUpperCase()}
+                            <div className='text-scale-60-2 w-full text-[#CADEFF]'>
+                            {project.developer.toUpperCase()}
+                            </div>
                             <div className="flex gap-x-[5%] gap-y-0  flex-wrap pt-[5%] justify-center">
                             {project.techstack.map((tech,index)=>{
                                 return(
