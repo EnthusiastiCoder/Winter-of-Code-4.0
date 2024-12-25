@@ -61,9 +61,9 @@ const PartnerCard = ({partner} : {partner:Partner}) => {
                 <div className='absolute top-[4%] left-[10%] w-[80%] align-middle font-chakra font-bold text-scale-40-4 text-center text-timeline text-nowrap overflow-hidden'>
                 {partner.name}
                 </div>
-                <div className="absolute left-[10%] top-[25%] w-[80%] h-[60%] items-center flex">
+                <div className={`absolute left-[50%] -translate-x-[50%] top-[26.5%] ${partner.name.startsWith("GDG On Campus") ? "w-[125%]" : "w-[90%]"} h-[60%] items-center flex overflow-hidden`}>
                     <Image src={`/partners/${partner.name}.${partner.name.startsWith("GDG On Campus") ? "svg" : "png"}`}
-                    className='max-h-[90%] w-fit mx-auto' width="500" height="500"  alt={partner.name}/>
+                    className='w-full h-fit mx-auto' width="500" height="500"  alt={partner.name}/>
                 </div>
                 
             </a>

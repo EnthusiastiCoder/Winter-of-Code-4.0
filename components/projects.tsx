@@ -76,18 +76,27 @@ const projectData: Project[] = [
   {
         name: "Tiled",
         developer: "MapEditor",
-        desc: "1) Next Generation Tiled Extensions\nThis project is about exploring the possibility of using QML rather than JavaScript to author Tiled extensions.\nMore information at https://github.com/mapeditor/tiled/wiki/Next-generation-Tiled-extensions\n\n2) glTF Export for Maps\nThis project is about implement a glTF export feature for maps, allowing them to be quickly imported for use in other frameworks without that framework needing to implement support for all of Tiled's features.\nMore information at https://github.com/mapeditor/tiled/wiki/GSoC-2022#gltf-export-for-maps\n\n3) Smaller proposal idea could also be found among Tiled's open issues.",
-        techstack: ["C++", "QML", "Java", "C", "Python", "XSLT"],
+        desc: "Tiled is a free and open source, easy to use, and flexible level editor.\n\n1) Next Generation Tiled Extensions\nThis project is about exploring the possibility of using QML rather than JavaScript to author Tiled extensions.\nMore information at https://github.com/mapeditor/tiled/wiki/Next-generation-Tiled-extensions\n\n2) glTF Export for Maps\nThis project is about implement a glTF export feature for maps, allowing them to be quickly imported for use in other frameworks without that framework needing to implement support for all of Tiled's features.\nMore information at https://github.com/mapeditor/tiled/wiki/GSoC-2022#gltf-export-for-maps\n\n3) Smaller proposal idea could also be found among Tiled's open issues.",
+        techstack: ["C++", "QML", "JavaScript"],
         github: "https://github.com/mapeditor/tiled",
         mentors: [{
-            name: "Bjorn Lindeijer",
+            name: "Thorbjørn Lindeijer",
             socials: {          	 
         linkedin: '',
                 discord: '',
-                email: "mailto:bjorn@lindeijer.nl",
+                email: "bjorn@lindeijer.nl",
                 twitter: "https://twitter.com/TiledApp"
             }
-        }
+        },
+        {
+          name: "dogboydog",
+          socials: {          	 
+              linkedin: '',
+              discord: '',
+              email: "https://github.com/dogboydog/",
+              twitter: ""
+          }
+      }
   ],
         socials: {
             linkedin: "",
@@ -137,7 +146,7 @@ const projectData: Project[] = [
   {
         name: "TensorZero",
         developer: "TensorZero",
-        desc: "TensorZero is a platform designed to optimize large language model (LLM) applications by creating a feedback loop that turns production data into smarter, faster, and cheaper models.\n\nProposal Ideas:\n1) Recipes: Create new optimization recipes. Simple ones include adapting fine-tuning recipes to other providers. More complex ones include RLHF/RLAIF, APE, and more.\n\n2) Examples & Demos: Apply TensorZero to new datasets, use cases (e.g. RAG), etc. Use it to demonstrate better performance than out-of-the-box models.\n\n3) Integrations: Add support for additional inference providers like Deepseek, xAI, and others to expand TensorZero’s capabilities.",
+        desc: "TensorZero is a platform designed to optimize large language model (LLM) applications by creating a feedback loop that turns production data into smarter, faster, and cheaper models.\n\nProposal Ideas:\n1) Recipes: Create new optimization recipes. Simple ones include adapting fine-tuning recipes to other providers. More complex ones include RLHF/RLAIF, APE, and more.\n\n2) Examples & Demos: Apply TensorZero to new datasets, use cases (e.g. RAG), etc. Use it to demonstrate better performance than out-of-the-box models.\n\n3) Integrations: Add support for additional inference providers like Deepseek, xAI, and others to expand TensorZero’s capabilities.\n\n4) Other smaller projects for beginners are available with the label 'good-first-issue'\nhttps://github.com/tensorzero/tensorzero/issues?q=is%3Aissue+is%3Aopen+label%3Agood-first-issue",
      techstack: ["Python", "Rust", "Machine Learning"],
      github: "https://github.com/tensorzero/tensorzero/",
      mentors: [{
@@ -230,7 +239,7 @@ const projectData: Project[] = [
     ],
     socials: {
     linkedin: "",
-    discord: "",
+    discord: "https://discord.com/invite/MsE9RN3FU4",
     email: "",
     twitter: "",
     },
@@ -238,7 +247,7 @@ const projectData: Project[] = [
   {
     name: "DashPress",
     developer: "DashPress",
-    desc: "Dashpress is an admin app generator to help you transform your database schema into a sleek, customizable and performant admin dashboards quickly and efficiently.\n\nProposal Ideas:\n1.Resend Integration\n2.WhatsApp Integration\n\nMore Information about contrubuting at:\nhttps://github.com/dashpresshq/dashpress/blob/master/docs/CONTRIBUTING.md",
+    desc: "Dashpress is an admin app generator to help you transform your database schema into a sleek, customizable and performant admin dashboards quickly and efficiently.\n\nProposal Ideas:\n1. Resend Integration\n2. WhatsApp Integration\n3. Allow users inject analytics scripts: https://github.com/dashpresshq/dashpress/issues/102 \n\nMore Information about contributing at:\nhttps://github.com/dashpresshq/dashpress/blob/master/docs/CONTRIBUTING.md",
     techstack: [
     "TypeScript"
     ],
@@ -370,7 +379,7 @@ const projectData: Project[] = [
   {
     name: "Pumpbin",
     developer: "Pumpbin",
-    desc: "The iced has released version 0.13.1, but this project is still using version 0.13.0-dev. The participants should update the project to version 0.13.1 of Iced, test the changes, and resolve any potential issues caused by the version upgrade.\n   - Check if the remaining dependencies can be upgraded, and update them.\n   - This project has English documentation, but unfortunately, it is mostly AI-translated with minimal manual verification. One would require to gain a thorough understanding of PumpBin and subsequently improve the English documentation, it would be a significant contribution and quite a challenging task.\n\nImportant points:\n1.Proficiency in the Rust programming language is required.\n2.After modifying the code, a comprehensive test is required.\n3.Initiate a discussion before making significant changes.",
+    desc: "The iced has released version 0.13.1, but this project is still using version 0.13.0-dev.\n\n1. Participants should update the project to version 0.13.1 of Iced, test the changes, and resolve any potential issues caused by the version upgrade.\n\n2. Check if the remaining dependencies can be upgraded, and update them.\n\n3. This project has English documentation, but unfortunately, it is mostly AI-translated with minimal manual verification. One would require to gain a thorough understanding of PumpBin and subsequently improve the English documentation, it would be a significant contribution and quite a challenging task.\n\nImportant points:\n1. Proficiency in the Rust programming language is required.\n2. After modifying the code, a comprehensive test is required.\n3. Initiate a discussion before making significant changes.",
     techstack: [
     "Rust","Shell"
     ],
@@ -397,7 +406,7 @@ const projectData: Project[] = [
   {
     name: "rust-shellcode",
     developer: "b1nhack",
-    desc: " The project uses the windows-sys crate (from the windows-rs repository by Microsoft). Participants should update it to the latest version to take advantage of recent improvements, bug fixes, and updates provided by the maintainers.\n   - If new techniques for executing shellcode on the Windows platform have emerged recently but are not included in the rust-shellcode repository, participants are encouraged to identify and add them.\n\nImportant points:\n1.Proficiency in the Rust programming language is required.\n2.After modifying the code, a comprehensive test is required.\n3.Initiate a discussion before making significant changes.",
+    desc: " The project uses the windows-sys crate (from the windows-rs repository by Microsoft).\n\n1. Participants should update it to the latest version to take advantage of recent improvements, bug fixes, and updates provided by the maintainers.\n\n2. If new techniques for executing shellcode on the Windows platform have emerged recently but are not included in the rust-shellcode repository, participants are encouraged to identify and add them.\n\nImportant points:\n1. Proficiency in the Rust programming language is required.\n2. After modifying the code, a comprehensive test is required.\n3. Initiate a discussion before making significant changes.",
     techstack: [
     "Rust","Shell"
     ],
@@ -710,7 +719,7 @@ const projectData: Project[] = [
   },
   
   
-  
+  //*
   {
     name: "Awesome Open Source Flutter Apps",
     developer: "Flutter Gems",
@@ -747,7 +756,7 @@ const projectData: Project[] = [
     },
   },
   
-  /*
+  
   {
     name: "Learn Python 3",
     developer: "Ankit Mahato",
@@ -899,6 +908,17 @@ const ProjectCard = ({project}: {project: Project}) => {
                                     </div>
                                 </div>
                             ))}
+                            </div>
+                            <div className="flex items-baseline w-full justify-center gap-[5%] border-t-[1px] pt-[3.5%]">
+                            {(Object.keys(project.socials) as (keyof Socials)[]).map((key) => {
+                              if (!project.socials[key]) return null;
+                              const social = project.socials[key];
+                              return (
+                                <a key={key} href={social} rel="noopener noreferrer" target="_blank" className="w-[15%] min-w-[15px] aspect-square py-[2%] hover:scale-110 duration-700">
+                                  <Image src={asset[key]} alt={key}/>
+                                </a>
+                              );
+                            })}
                             </div>
                         </div>
                         <a href={project.github} rel="noopener noreferrer" target="_blank" className="absolute font-kleemax text-black bottom-[0%] left-[0%] w-[30%] py-[1.5%] h-[9%] text-center align-middle text-scale-15-1 hover:scale-105 duration-700">VISIT PROJECT</a>

@@ -35,6 +35,10 @@ const orgsData:Org[] = [
         website: 'https://www.tensorzero.com/'
     },
     {
+        name: 'Mixxx',
+        website: 'https://mixxx.org/'
+    },
+    {
         name: 'GDevelop',
         website: 'https://gdevelop.io/'
     },
@@ -44,12 +48,8 @@ const orgsData:Org[] = [
         website: 'https://sql-page.com/'
     },
     {
-        name: 'Open World Holidays',
+        name: 'Holidays Framework',
         website: 'https://pypi.org/project/holidays/'
-    },
-    {
-        name: 'b1n',
-        website: 'https://b1n.io/'
     },
     {
         name: 'Laudspeaker',

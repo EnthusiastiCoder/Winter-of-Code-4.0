@@ -1,5 +1,4 @@
 'use client'
-import type { Metadata } from "next";
 import { Inter, Chakra_Petch } from "next/font/google";
 import localfont from "next/font/local";
 import "../app/globals.css";
@@ -7,11 +6,6 @@ import { useEffect } from "react";
 import Head from "next/head";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-
-import asset1 from '../public/platinum.svg'
-import asset2 from '../public/gold.svg'
-import asset3 from '../public/silver.svg'
-import asset4 from '../public/bronze.svg'
  
 const inter = Inter({ subsets: ["latin"] });
 const chakra = Chakra_Petch({
