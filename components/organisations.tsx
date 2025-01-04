@@ -42,7 +42,6 @@ const orgsData:Org[] = [
         name: 'GDevelop',
         website: 'https://gdevelop.io/'
     },
-    
     {
         name: 'SQL Page',
         website: 'https://sql-page.com/'

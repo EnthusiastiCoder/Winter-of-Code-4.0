@@ -719,7 +719,7 @@ const projectData: Project[] = [
   },
   
   
-  //*
+  /*
   {
     name: "Awesome Open Source Flutter Apps",
     developer: "Flutter Gems",
@@ -829,7 +829,281 @@ const projectData: Project[] = [
       email: "",
       twitter: "",
     },
-  },  
+  },
+  
+  {
+    name: "Mifos-Gazelle",
+    developer: "Mifos",
+    desc: "Proposal Idea:\n\nReview and update all pipelines and docker images to enable a build to run on ARM processors. This would be the first step to being able to deploy Mifos Gazelle on a Raspberry Pi-based lab.\n\nContributors are recommended to go through the \"README\" section on GitHub to have better understanding.",
+    techstack: [ "Shell", "Dockerfile"
+    ],
+    github: "https://github.com/openMF/mifos-gazelle",
+    mentors: [
+      {
+        name: "Tom Daly",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/tom-daly-63b0a72/",
+          discord: "",
+          email: "tdaly@mifos.org",
+          twitter: "",
+        },
+      },
+      {
+        name: "David Higgins",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/david-higgins-b70a10/",
+          discord: "",
+          email: "dhiggins@mifos.org",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  
+  {
+    name: "Mobile Wallet",
+    developer: "Mifos",
+    desc: "Mobile Wallet app built on top of the compose multi-platform.\nIn this Winter of Code, we are focusing on enabling AI-generated documentation and writing Unit and UI tests for end-to-end functionality on all platforms.\n\nProposal Ideas:\n-https://mifosforge.jira.com/browse/MW-161\n- https://mifosforge.jira.com/browse/MW-162"
+  ,
+    techstack: [ "Shell", "Kotlin"
+    ],
+    github: "https://github.com/openMF/mobile-wallet",
+    mentors: [
+      {
+        name: "Rajan Maurya",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/therajanmaurya/",
+          discord: "therajanmaurya",
+          email: "rajanmaurya154@gmail.com",
+          twitter: "",
+        },
+      },
+      {
+        name: "Sk Niyaj Ali",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/skniyajali/",
+          discord: "",
+          email: "skniyajali0@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  
+  {
+    name: "Mifos-Mobile",
+    developer: "Mifos",
+    desc: "An Android Application built on top of the MifosX Self-Service platform for end-user customers to view/transact on the accounts and loans they hold. Data visible to customers will be a sub-set of what staff can see. This is a native Android Application written in Kotlin.\n\nProposal Ideas:\n-https://mifosforge.jira.com/browse/MM-92\n-https://mifosforge.jira.com/browse/MM-93\n-https://mifosforge.jira.com/browse/MM-94"
+  ,
+    techstack: ["Kotlin"
+    ],
+    github: "https://github.com/openMF/mifos-mobile",
+    mentors: [
+      {
+        name: "Rajan Maurya",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/therajanmaurya/",
+          discord: "therajanmaurya",
+          email: "rajanmaurya154@gmail.com",
+          twitter: "",
+        },
+      },
+      {
+        name: "Sk Niyaj Ali",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/skniyajali/",
+          discord: "",
+          email: "skniyajali0@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  
+  
+  
+  {
+    name: "Android-Client",
+    developer: "Mifos",
+    desc: "This Android application, built in Kotlin on the Mifos X platform, is designed for field officers to manage core banking operations. It facilitates transaction processing, client data management, group and center records, and account handling (loans, savings, recurring). It also enables generating client reports efficiently.\n\nProposal Ideas:\n-https://mifosforge.jira.com/browse/MIFOSAC-317\n-https://mifosforge.jira.com/browse/MIFOSAC-318",
+    techstack: ["Kotlin"
+    ],
+    github: "https://github.com/openMF/android-client",
+    mentors: [
+      {
+        name: "Rajan Maurya",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/therajanmaurya/",
+          discord: "therajanmaurya",
+          email: "rajanmaurya154@gmail.com",
+          twitter: "",
+        },
+      },
+      {
+        name: "Sk Niyaj Ali",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/skniyajali/",
+          discord: "",
+          email: "skniyajali0@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  {
+    name: "DL-Simplified",
+    developer: "Abhishek Sharma",
+    desc: "Deep Learning Simplified is an open-source repository designed to guide contributors from beginner to advanced levels in deep learning. Whether you're just starting your journey or looking to sharpen your skills, this is the place for you.\n\nHere are some key points for contributors:\n\n1. Focus on Deep Learning Models: We encourage contributors to concentrate primarily on implementing deep learning models rather than basic machine learning models. Please review the issues section thoroughly, select one that matches your expertise, and propose your approach with various deep learning methods and models before requesting assignment.\n\n2. Explore OpenCV Implementations: Several issues in this repository involve OpenCV. Contributing to these will provide valuable hands-on experience and enhance your proficiency with OpenCV, which is a crucial skill for many deep learning tasks.\n\n3. NLP is a Key Area: We have several NLP-related issues that require attention. Be sure to fully understand the problem statements before diving into the implementation, and tailor your models to meet the requirements specified in each issue template."
+  ,
+    techstack: [ "Python"
+    ],
+    github: "https://github.com/abhisheks008/DL-Simplified",
+    mentors: [
+      {
+        name: "Abhishek Sharma",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/abhishek-sharma-aa06a9183/",
+          discord: "",
+          email: "abhishek.opensource@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  {
+    name: "Mixxx",
+    developer: "Mixxx",
+    desc: "Mixxx is a software that integrates the tools DJs need to perform creative live mixes with digital music files. Whether you are a new DJ with just a laptop or an experienced turntablist, Mixxx can support your style and techniques of mixing.\n\nProposal Ideas:\n\n1) Key Colors for Rate Slider:The Mixxx Rate Slider can change a track's key (when Keylock is off). This project will add color-coded hints along the slider to show the key the track will shift to at different slider positions.\n\n2) Key Tuning: Mixxx does not show tuning information of tracks, which makes harmonic mixing difficult in case of non 440 Hz tuning. The project will integrate a tuning detector and show tuning information in the library.\n\n3) Contributors are free to propose their own ideas\n\nFor more details visit:https://github.com/mixxxdj/mixxx/wiki/WOC"
+  ,
+    techstack: ["C++","C","JavaScript","Shell"
+    ],
+    github: "https://github.com/mixxxdj/mixxx",
+    mentors: [
+      {
+        name: "Daniel Schürmann",
+        socials: {
+          linkedin: "",
+          discord: "",
+          email: "daschuer@mixxx.org",
+          twitter: "",
+        },
+      },
+      {
+        name: "Daniel Fernandes",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/danferns/",
+          discord: "",
+          email: "dannywritescode@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  {
+    name: "PortPy",
+    developer: "PortPy",
+    desc: "Proposal Ideas:\n\n1.Data Visualization:\n  1.1 Interactive Plot for Dose-Volume Histograms (DVH) Data\n  1.2 Animated Visualization of Multi-Leaf Collimator (MLC) Movements\n  1.3 Interactive Image Slice Navigation of CT Scan and Radiation Dose Map\n  1.4 User-Friendly Web Dashboard for PortPy Dataset Visualization\n\n2.Neural Network Model Development:\n  2.1 Implementing the Top 3 Neural Network Models of the 2020-OpenKBP Challenge in PortPy\n\n3.Optimization Algorithm:\n  3.1 Using Google's Jax.Opt to Solve PortPy Optimization Problems\n  3.2 Using SciPy.Optimize to Solve PortPy Optimization Problems\n  3.3 Python Implementation of Gradient Descent Algorithm for Solving PortPy Optimization Problems\n  3.4 Python Implementation of the ADMM Algorithm for PortPy Optimization Problems\n\n4.Creating a Documentation Website and Automated Unit Testing using GitOps CI/CD Features:\n  4.1 Creating a Documentation Website with GitOps CI/CD Features for PortPy\n  4.2 Creating Unit Tests with GitOps CI/CD Features for PortPy\n\nFor more detailed information visit:https://github.com/PortPy-Project/PortPy/blob/master/WOC/README.md\nTechStacks for each proposal are mentioned in above link"
+  ,
+    techstack: ["Python"
+    ],
+    github: "https://github.com/PortPy-Project/PortPy",
+    mentors: [
+      {
+        name: "Masoud Zarepisheh",
+        socials: {
+          linkedin: "",
+          discord: "",
+          email: "zarepism@mskcc.org",
+          twitter: "",
+        },
+      },{
+        name: "Gourav Jhanwar",
+        socials: {
+          linkedin: "",
+          discord: "",
+          email: "JhanwarG@mskcc.org",
+          twitter: "",
+        },
+      },{
+        name: "Mojtaba Tefagh",
+        socials: {
+          linkedin: "",
+          discord: "",
+          email: "m.tefagh@ed.ac.uk",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  {
+    name: "HPX",
+    developer: "The STELLAR Group",
+    desc: "HPX is a C++ Standard Library for Concurrency and Parallelism. It implements all of the corresponding facilities as defined by the C++ Standard.\n\nProposal Ideas:\n\n Create HPX executor type that connects HPX to CUDA-Quantum"
+  ,
+    techstack: ["C++","CMake","Python","Shell"
+    ],
+    github: "https://github.com/STEllAR-GROUP/hpx",
+    mentors: [
+      {
+        name: "Hartmut Kaiser",
+        socials: {
+          linkedin: "",
+          discord: "hkaiser",
+          email: "hartmut.kaiser@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+
 ];
 
 const asset = {
