@@ -66,6 +66,10 @@ const orgsData:Org[] = [
         name: 'API Dash',
         website: 'https://apidash.dev/'
     },
+    {
+        name: 'The Stellar Group',
+        website: 'https://hpx.stellar-group.org/'
+    }
 ];
 
 const OrgCard = ({org} : {org:Org}) => {

@@ -794,7 +794,41 @@ const projectData: Project[] = [
   },
   
   //*/
-  
+  {
+    name: "ChartDB",
+    developer: "ChartDB",
+    desc: "ChartDB is a powerful, web-based database diagramming editor. Instantly visualize your database schema with a single \"Smart Query.\" Customize diagrams, export SQL scripts, and access all features - no account required.\n\nProposal Ideas:\n\n1) Optimize the canvas to handle more tables by identifying and resolving performance bottlenecks incrementally, focusing on rendering, memory usage, and event handling.\n\n2) Add support for more databases - Snowflake, Oracle, ...\n\n3) Add a section to list database-related errors in diagrams (e.g., mismatched foreign key types).\n\nhttps://github.com/chartdb/chartdb/issues/485\n\n4) Optimize size & performance on SVG export.\n\nhttps://github.com/chartdb/chartdb/issues/375\n\n5) Improve flexibility and performance of the Docker setup.\n\nhttps://github.com/chartdb/chartdb/issues/428\n\n6) Add support custom types like enums.\n\nhttps://github.com/chartdb/chartdb/issues/475\n\n7) Add support for various export/import dialects.\n\nhttps://github.com/chartdb/chartdb/issues/383\n\nhttps://github.com/chartdb/chartdb/issues/72\n\n8) Extend field properties to include default values and size, ensuring these options are conditional based on the field type (e.g., size not applicable for integers).\n\n9) Bug Fixes: Contribute by fixing bugs labeled as \"good first issue\" to onboard new contributors."
+  ,
+    techstack: [ "React", "Typescript", "CSS"
+    ],
+    github: "https://github.com/chartdb/chartdb",
+    mentors: [
+      {
+        name: "Jonathan Fishner",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/jonathanfishner/",
+          discord: "https://discord.gg/QeFwyWSKwC",
+          email: "jonathan@buckle.dev",
+          twitter: "",
+        },
+      },
+      {
+        name: "Guy Ben Aharon",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/guy-ben-aharon/",
+          discord: "https://discord.gg/QeFwyWSKwC",
+          email: "guybenah@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
   {
     name: "BrainPunk",
     developer: "Ankit Mahato",
