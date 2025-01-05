@@ -517,6 +517,61 @@ const projectData: Project[] = [
     },
   },  
   {
+    name: "GDevelop",
+    developer: "GDevelop",
+    desc: "GDevelop is a full-featured, no-code, open-source game development software. You can build 2D, 3D and multiplayer games for mobile (iOS, Android), desktop and the web. GDevelop is fast and easy to use: the game logic is built up using an intuitive and powerful event-based system and reusable behaviors.\n\nFor further detail visit following link: https://gdevelop.notion.site/Public-WOC-2025-Project-descriptions-and-mentors-1618b47a33d280da9b4ef9c1232e8bbc"
+  ,
+    techstack: [ "C","C++","JavaScript","TypeScript","CSS"
+    ],
+    github: "https://github.com/4ian/GDevelop",
+    mentors: [
+      {
+        name: "Clemet",
+        socials: {
+          linkedin: "",
+          discord: "",
+          email: "clement@gdevelop.io",
+          twitter: "",
+        },
+      },
+      {
+        name: "Alexandre",
+        socials: {
+          linkedin: "",
+          discord: "",
+          email: "alexandre@gdevelop.io ",
+          twitter: "",
+        },
+      },
+      {
+        name: "Davy",
+        socials: {
+          linkedin: "",
+          discord: "",
+          email: "davy@gdevelop.io",
+          twitter: "",
+        },
+      },
+      {
+        name: "Florian",
+        socials: {
+          linkedin: "",
+          discord: "",
+          email: "florian@gdevelop.io",
+          twitter: "",
+        },
+      }
+  
+  
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  {
     name: "Snapcrafters CI",
     developer: "Snapcrafters",
     desc: "Proposal Ideas:\n\n1. Implement CI System in Repositories:\n   - Integrate the custom CI system into snap repositories that don’t currently use it.\n   - Verify and update snaps as needed. A comprehensive list of snaps, including their CI integration status and whether they are up-to-date, can be found here: https://snapcrafters.org/snap-packages/.\n\nDocumentation Reference: https://github.com/snapcrafters/ci-workshop\n\nGeneral Notes for Participants:\n\n1. Core Skills Needed:\n   - Bash scripting.\n   - Hugo development.\n   - Debugging and maintaining software/snaps.\n\n2. Students are encouraged to propose their own ideas, especially around improving the CI system or enhancing the website.",
@@ -1137,7 +1192,143 @@ const projectData: Project[] = [
       twitter: "",
     },
   },
-
+  {
+    name: "DevMatchups",
+    developer: "Harsh Pandey",
+    desc: "DevMatchups is a platform designed to connect developers and enthusiasts from all around the world to form teams for hackathons. Whether you're looking for teammates with specific skills, or you want to join a team, this platform provides an easy way to collaborate and participate in hackathons."
+  ,
+    techstack: ["Typescript","JavaScript"
+    ],
+    github: "https://github.com/harsh3dev/DevMatchups",
+    mentors: [
+      {
+        name: "Harsh Pandey",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/harsh3dev/",
+          discord: "harsh3dev",
+          email: "harshpandey.tech@gmail.com",
+          twitter: "",
+        },
+      },{
+        name: "Yash Gupta",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/yash-gupta-64956b246/",
+          discord: "YASH@9330",
+          email: "yaahg342@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  {
+    name: "WallGodds",
+    developer: "PARNAB BAGCHI",
+    desc: "PROPOSAL IDEAS:\n\nFor Beginners:  \n- Clear and guided issues like fixing UI bugs, updating documentation, or implementing simple features.  \n- A detailed CONTRIBUTING.md file to help first-timers navigate the process.\n\nFor Intermediate Contributors:  \n- Tasks such as developing reusable components, optimizing the backend, and enhancing the responsiveness of the UI.  \n\nFor Advanced Developers:  \n- Complex challenges like implementing scalable API endpoints, integrating authentication systems, or improving database efficiency.  \n- Tasks that push creativity, such as advanced animations or new user workflows.\n\nFor Designers:  \n- A dedicated DESIGN.md document to provide guidelines and vision.  \n- Access to our Figma file for creating and refining minimalistic, user-friendly layouts.  \n- A design initiative that helps foster collaboration among designers, offering a platform to showcase and implement their ideas."
+  ,
+    techstack: ["JavaScript","HTML","CSS","Figma"
+    ],
+    github: "https://github.com/Parnab03/WallGodds",
+    mentors: [
+      {
+        name: "PARNAB BAGCHI",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/parnab-bagchi-072966251",
+          discord: "Parnab_03",
+          email: "pb7439578071@gmail.com",
+          twitter: "",
+        },
+      },{
+        name: "SOUMIK GHOSH",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/soumik-ghosh-556651258/",
+          discord: "soumikghosh_999",
+          email: "soumikghosh09072004@gmail.com",
+          twitter: "",
+        },
+      },{
+        name: "SHANKHADEEP PARIA",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/shankhadeepparia/",
+          discord: "shankyy69",
+          email: "pariashankhadeep@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  {
+    name: "APIsh",
+    developer: "Nikhil Chopra",
+    desc: "APIsh is a decentralized API marketplace that allows developers to publish APIs and users to access them via blockchain-based micropayments. This project aims to streamline the process of API integration and usage while ensuring secure and efficient transactions.\n\nProposal Ideas:\nAdding user metrics , improvement of pre-built chatbot templates\nContributors are free to explore and propose their own idea."
+  ,
+    techstack: ["Typescript"
+    ],
+    github: "https://github.com/nikhilchopra08/apish",
+    mentors: [
+      {
+        name: "Ansh Garg",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/ansh-garg-777ab7258/",
+          discord: "NikhilChopra",
+          email: "anshgarg030404@gmail.com",
+          twitter: "",
+        },
+      },{
+        name: "Varun Jaiswal",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/varun-jaiswal-19581726b/",
+          discord: "dinosaur8861",
+          email: "varunjaiswalvv@gmail.com",
+          twitter: "",
+        },
+      }
+    
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  {
+    name: "Retro",
+    developer: "Lakshmi Pavananjali",
+    desc: "RETRO is an online platform celebrating vintage aesthetics and timeless designs. It blends classic styles with modern usability, offering information on vintage collections and enabling users to place orders. RETRO provides a sophisticated experience where nostalgia meets innovation, bringing the charm of the past to life.\n\nContributors are free to explore and propose their own idea."
+  ,
+    techstack: ["Python","Javascript","CSS","HTML"
+    ],
+    github: "https://github.com/Anjaliavv51/Retro",
+    mentors: [
+      {
+        name: "Pamidi Lakshmi Pavananjali",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/lakshmi-pavananjali-pamidi-766760296",
+          discord: "",
+          email: "plpanjali05@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
 ];
 
 const asset = {
