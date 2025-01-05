@@ -40,7 +40,7 @@ const BorderText = () => {
                     </div>
                     :
                     <Link href="https://winterofcode.devfolio.co/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
-                            <JumbleText text="REGISTER HERE" id="registerhere"/>
+                            <JumbleText text="REGISTRATION CLOSED" id="registerhere"/>
                     </Link>}
                 </div>
                 <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>

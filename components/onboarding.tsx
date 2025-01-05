@@ -28,7 +28,7 @@ const Register = () => {
                         <JumbleText text="COMING SOON" id="registerhere"/>
                     </div>:
                     <Link href="https://winterofcode.devfolio.co/" rel="noopener noreferrer" target="_blank" className="text-nowrap pt-[1.5%] font-kleemax">
-                        <JumbleText text="REGISTER HERE" id="registerhere2"/>
+                        <JumbleText text="REGISTRATION CLOSED" id="registerhere2"/>
                     </Link>}
                 </div>
                 <hr className="w-full h-[0.25vw] bg-gradient-to-r from-brand"/>
