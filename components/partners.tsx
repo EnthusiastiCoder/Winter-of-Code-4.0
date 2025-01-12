@@ -11,12 +11,28 @@ const partnerData:Partner[] = [
         link: "https://gdg.community.dev/gdg-on-campus-atharva-college-of-engineering-mumbai-india"
     },
     {
+        name: "GDG On Campus, VIT Mumbai",
+        link: "https://gdg.community.dev/gdg-on-campus-vidyalankar-institute-of-technology-mumbai-india"
+    },
+    {
         name: "GDG On Campus, Dr. AITD Kanpur",
         link: "https://gdg.community.dev/gdg-on-campus-dr-ambedkar-institute-of-technology-for-handicapped-kanpur-india"
     },
     {
-        name: "GDG On Campus, FIEM Kolkata",
-        link: "https://gdg.community.dev/gdg-on-campus-future-institute-of-engineering-management-kolkata-india"
+        name: "GDG On Campus, SAGE University Indore",
+        link: "https://gdg.community.dev/gdg-on-campus-sage-university-indore-india"
+    },
+    {
+        name: "GDG On Campus, Bengal Institute of Technology",
+        link: "https://gdg.community.dev/gdg-on-campus-sage-university-indore-india"
+    },
+    {
+        name: "GDG On Campus, NFSU Gandhinagar",
+        link: "https://gdg.community.dev/gdg-on-campus-national-forensic-sciences-university-gandhinagar-india"
+    },
+    {
+        name: "GDG On Campus, Dr. B.C. Roy Engineering College",
+        link: "https://gdg.community.dev/gdg-on-campus-dr-bc-roy-engineering-college-durgapur-india"
     },
     {
         name: "GDG On Campus, GESCOE Nashik",
@@ -37,11 +53,11 @@ const partnerData:Partner[] = [
     {
         name: "GDG On Campus, GNIT Kolkata",
         link: "https://gdg.community.dev/gdg-on-campus-guru-nanak-institute-of-technology-kolkata-india"
-    },
+    },  
     {
-        name: "GDG On Campus, VIT Mumbai",
-        link: "https://gdg.community.dev/gdg-on-campus-vidyalankar-institute-of-technology-mumbai-india"
-    },   
+        name: "IIITians Network",
+        link: "https://linktr.ee/Iiitians.network"
+    },
     {
         name: "NooBuild",
         link: "https://www.linkedin.com/company/noobuild/"
