@@ -1321,7 +1321,9 @@ const ProjectCard = ({project}: {project: Project}) => {
                                     <div key={index} className="flex items-baseline w-full justify-center gap-[5%]">
                                     {(Object.keys(mentor.socials) as (keyof Socials)[]).map((key) => {
                                         if (!mentor.socials[key]) return null;
-                                        const social = mentor.socials[key];
+                                        var social = mentor.socials[key];
+                                        if(key=="email")
+                                          social = "mailto:"+social;
                                         return (
                                             <a key={key} href={social} rel="noopener noreferrer" target="_blank" className="w-[15%] min-w-[15px] aspect-square py-[2%] hover:scale-110 duration-700">
                                                 <Image src={asset[key]} alt={key}/>
