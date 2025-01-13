@@ -35,18 +35,18 @@ const timelineData:TEvent[] = [
     },
     {
       startDate: '05-01-2025',
-      endDate: '12-01-2025',
+      endDate: '19-01-2025',
       title: 'Proposal Writing',
       description: 'A week-long workshop focused on helping students write strong, well-structured project proposals. Get guidance from mentors and learn the best practices for proposing your project ideas.'
     },
     {
-      startDate: '12-01-2025',
-      endDate: '19-01-2025',
+      startDate: '19-01-2025',
+      endDate: '25-01-2025',
       title: 'Community Bonding Phase',
       description: 'This phase encourages students and mentors to connect, discuss their projects, and build rapport with the organisations. It’s a great opportunity to understand your project’s goals better before diving into coding.'
     },
     {
-      startDate: '20-01-2025',
+      startDate: '26-01-2025',
       endDate: '20-02-2025',
       title: 'Coding\nPhase',
       description: 'This is where the real fun begins! The core phase of Winter of Code, where students begin implementing their proposed projects. During this period, students will collaborate closely with mentors and contribute code to open-source repositories.'

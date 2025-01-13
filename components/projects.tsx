@@ -724,7 +724,7 @@ const projectData: Project[] = [
       socials: {
         linkedin: "",
         discord: "",
-        email: "singhrudra5556@gmail.com",
+        email: "rudransh.iitm@gmail.com",
         twitter: "",
       },
     },
