@@ -1193,6 +1193,48 @@ const projectData: Project[] = [
     },
   },
   {
+    name: "WallGodds",
+    developer: "PARNAB BAGCHI",
+    desc: "PROPOSAL IDEAS:\n\nFor Beginners:  \n- Clear and guided issues like fixing UI bugs, updating documentation, or implementing simple features.  \n- A detailed CONTRIBUTING.md file to help first-timers navigate the process.\n\nFor Intermediate Contributors:  \n- Tasks such as developing reusable components, optimizing the backend, and enhancing the responsiveness of the UI.  \n\nFor Advanced Developers:  \n- Complex challenges like implementing scalable API endpoints, integrating authentication systems, or improving database efficiency.  \n- Tasks that push creativity, such as advanced animations or new user workflows.\n\nFor Designers:  \n- A dedicated DESIGN.md document to provide guidelines and vision.  \n- Access to our Figma file for creating and refining minimalistic, user-friendly layouts.  \n- A design initiative that helps foster collaboration among designers, offering a platform to showcase and implement their ideas."
+  ,
+    techstack: ["JavaScript","HTML","CSS","Figma"
+    ],
+    github: "https://github.com/Parnab03/WallGodds",
+    mentors: [
+      {
+        name: "PARNAB BAGCHI",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/parnab-bagchi-072966251",
+          discord: "Parnab_03",
+          email: "pb7439578071@gmail.com",
+          twitter: "",
+        },
+      },{
+        name: "SOUMIK GHOSH",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/soumik-ghosh-556651258/",
+          discord: "soumikghosh_999",
+          email: "soumikghosh09072004@gmail.com",
+          twitter: "",
+        },
+      },{
+        name: "SHANKHADEEP PARIA",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/shankhadeepparia/",
+          discord: "shankyy69",
+          email: "pariashankhadeep@gmail.com",
+          twitter: "",
+        },
+      }
+    ],
+    socials: {
+      linkedin: "",
+      discord: "",
+      email: "",
+      twitter: "",
+    },
+  },
+  {
     name: "APIsh",
     developer: "Nikhil Chopra",
     desc: "APIsh is a decentralized API marketplace that allows developers to publish APIs and users to access them via blockchain-based micropayments. This project aims to streamline the process of API integration and usage while ensuring secure and efficient transactions.\n\nProposal Ideas:\nAdding user metrics , improvement of pre-built chatbot templates\nContributors are free to explore and propose their own idea."
