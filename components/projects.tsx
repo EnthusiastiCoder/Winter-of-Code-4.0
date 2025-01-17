@@ -662,6 +662,71 @@ const projectData: Project[] = [
 },
 
 
+{
+  name: "Fuzzing",
+  developer: "OpenPrinting",
+  desc: "Proposal Ideas:\n\nApply OSS-Fuzz to cups-browsed: https://github.com/OpenPrinting/fuzzing/issues/4\n Participants are encouraged to explore OpenPrinting in general (https://github.com/OpenPrinting/) and propose their own ideas."
+,
+  techstack: [ "C","C++","Shell","Makefile"
+  ],
+  github: "https://github.com/OpenPrinting/fuzzing",
+  mentors: [
+    {
+      name: "Till Kamppeter",
+      socials: {
+        linkedin: "",
+        discord: "tillkamppeter",
+        email: "till.kamppeter@gmail.com",
+        twitter: "",
+      },
+    },
+    {
+      name: "Jiongchi Yu",
+      socials: {
+        linkedin: "",
+        discord: "",
+        email: "jiongchiyu@gmail.com",
+        twitter: "",
+      },
+    },
+
+  ],
+  socials: {
+    linkedin: "",
+    discord: "",
+    email: "",
+    twitter: "",
+  },
+},
+
+{
+  name: "cups-browsed",
+  developer: "OpenPrinting",
+  desc: "Proposal Ideas:\n\nReview locking/multi-threading implementation: https://github.com/OpenPrinting/cups-browsed/issues/36\n Participants are encouraged to explore OpenPrinting in general (https://github.com/OpenPrinting/) and propose their own ideas."
+,
+  techstack: [ "C","M4","Shell","Roff","Makefile"
+  ],
+  github: "https://github.com/OpenPrinting/cups-browsed",
+  mentors: [
+    {
+      name: "Till Kamppeter",
+      socials: {
+        linkedin: "",
+        discord: "tillkamppeter",
+        email: "till.kamppeter@gmail.com",
+        twitter: "",
+      },
+    },
+
+  ],
+  socials: {
+    linkedin: "",
+    discord: "",
+    email: "",
+    twitter: "",
+  },
+},
+
 
 {
   name: "Fuzzing",
