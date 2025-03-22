@@ -53,12 +53,12 @@ const timelineData:TEvent[] = [
     },
     {
       startDate: '01-03-2025',
-      endDate: '08-03-2025',
+      endDate: '22-03-2025',
       title: 'Mentor Evaluation',
       description: 'Mentors will review the progress of students’ projects, providing feedback and guidance. This evaluation is crucial for refining and improving the final submission.'
     },
     {
-      startDate: 'XX-03-2025',
+      startDate: '23-03-2025',
       title: 'Closing Ceremony',
       description: 'The official conclusion of Winter of Code. Celebrate your achievements, review key learnings, and recognize outstanding contributors as we wrap up the program.'
     }
