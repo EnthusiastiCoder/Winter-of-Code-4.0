@@ -1145,6 +1145,15 @@ const projectData: Project[] = [
           email: "abhishek.opensource@gmail.com",
           twitter: "",
         },
+      },
+      {
+        name: "Suveda Kakarala",
+        socials: {
+          linkedin: "https://www.linkedin.com/in/suveda-kakarala-626277290/",
+          discord: "",
+          email: "suveda999@gmail.com",
+          twitter: "",
+        },
       }
     ],
     socials: {
